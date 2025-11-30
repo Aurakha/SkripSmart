@@ -22,6 +22,7 @@ Partial Class FormKonsulTI1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        components = New ComponentModel.Container()
         Button3 = New Button()
         Button1 = New Button()
         Label5 = New Label()
@@ -51,6 +52,7 @@ Partial Class FormKonsulTI1
         RadioButton3 = New RadioButton()
         RadioButton2 = New RadioButton()
         RadioButton1 = New RadioButton()
+        Timer1 = New Timer(components)
         Panel2.SuspendLayout()
         Panel3.SuspendLayout()
         Panel4.SuspendLayout()
@@ -161,7 +163,7 @@ Partial Class FormKonsulTI1
         Label6.Name = "Label6"
         Label6.Size = New Size(437, 46)
         Label6.TabIndex = 0
-        Label6.Text = "Seberapa menikmati kamu mencari tren atau anomali " & vbCrLf & "dalam kumpulan data untuk meemcahkan masalah real"
+        Label6.Text = "Seberapa menikmati kamu mencari tren atau anomali " & vbCrLf & "dalam kumpulan data untuk memecahkan masalah real"
         Label6.TextAlign = ContentAlignment.TopCenter
         ' 
         ' Label9
@@ -180,9 +182,9 @@ Partial Class FormKonsulTI1
         Label10.Font = New Font("Segoe UI Semibold", 10F, FontStyle.Bold)
         Label10.Location = New Point(636, 33)
         Label10.Name = "Label10"
-        Label10.Size = New Size(136, 23)
+        Label10.Size = New Size(167, 23)
         Label10.TabIndex = 11
-        Label10.Text = "Kategori: Level 2"
+        Label10.Text = "Kategori: Level 2 (TI)"
         Label10.TextAlign = ContentAlignment.TopCenter
         ' 
         ' Panel4
@@ -275,10 +277,10 @@ Partial Class FormKonsulTI1
         RadioButton5.AutoSize = True
         RadioButton5.Location = New Point(46, 232)
         RadioButton5.Name = "RadioButton5"
-        RadioButton5.Size = New Size(150, 24)
+        RadioButton5.Size = New Size(176, 24)
         RadioButton5.TabIndex = 4
         RadioButton5.TabStop = True
-        RadioButton5.Text = "5 - Sangat Paham"
+        RadioButton5.Text = "5 - Sangat Menikmati"
         RadioButton5.UseVisualStyleBackColor = True
         ' 
         ' RadioButton4
@@ -286,10 +288,10 @@ Partial Class FormKonsulTI1
         RadioButton4.AutoSize = True
         RadioButton4.Location = New Point(45, 186)
         RadioButton4.Name = "RadioButton4"
-        RadioButton4.Size = New Size(100, 24)
+        RadioButton4.Size = New Size(126, 24)
         RadioButton4.TabIndex = 3
         RadioButton4.TabStop = True
-        RadioButton4.Text = "4 - Paham"
+        RadioButton4.Text = "4 - Menikmati"
         RadioButton4.UseVisualStyleBackColor = True
         ' 
         ' RadioButton3
@@ -297,10 +299,10 @@ Partial Class FormKonsulTI1
         RadioButton3.AutoSize = True
         RadioButton3.Location = New Point(45, 139)
         RadioButton3.Name = "RadioButton3"
-        RadioButton3.Size = New Size(147, 24)
+        RadioButton3.Size = New Size(173, 24)
         RadioButton3.TabIndex = 2
         RadioButton3.TabStop = True
-        RadioButton3.Text = "3 - Cukup Paham"
+        RadioButton3.Text = "3 - Cukup Menikmati"
         RadioButton3.UseVisualStyleBackColor = True
         ' 
         ' RadioButton2
@@ -308,10 +310,10 @@ Partial Class FormKonsulTI1
         RadioButton2.AutoSize = True
         RadioButton2.Location = New Point(46, 93)
         RadioButton2.Name = "RadioButton2"
-        RadioButton2.Size = New Size(140, 24)
+        RadioButton2.Size = New Size(166, 24)
         RadioButton2.TabIndex = 1
         RadioButton2.TabStop = True
-        RadioButton2.Text = "2 - Tidak Paham"
+        RadioButton2.Text = "2 - Tidak Menikmati"
         RadioButton2.UseVisualStyleBackColor = True
         ' 
         ' RadioButton1
@@ -319,10 +321,10 @@ Partial Class FormKonsulTI1
         RadioButton1.AutoSize = True
         RadioButton1.Location = New Point(46, 49)
         RadioButton1.Name = "RadioButton1"
-        RadioButton1.Size = New Size(193, 24)
+        RadioButton1.Size = New Size(215, 24)
         RadioButton1.TabIndex = 0
         RadioButton1.TabStop = True
-        RadioButton1.Text = "1 - Sangat Tidak Paham "
+        RadioButton1.Text = "1 - Sangat Tidak Menikmati"
         RadioButton1.UseVisualStyleBackColor = True
         ' 
         ' FormKonsulTI1
@@ -336,7 +338,7 @@ Partial Class FormKonsulTI1
         Controls.Add(Panel4)
         Controls.Add(GroupBox1)
         Name = "FormKonsulTI1"
-        Text = "Konsultasi Level 2"
+        Text = "Konsultasi Level 2 - Prodi TI"
         Panel2.ResumeLayout(False)
         Panel2.PerformLayout()
         Panel3.ResumeLayout(False)
@@ -379,4 +381,5 @@ Partial Class FormKonsulTI1
     Friend WithEvents RadioButton3 As RadioButton
     Friend WithEvents RadioButton2 As RadioButton
     Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents Timer1 As Timer
 End Class
