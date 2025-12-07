@@ -61,6 +61,9 @@ Partial Class RiwayatKonsultasi
         Label11 = New Label()
         PictureBox5 = New PictureBox()
         Panel5 = New Panel()
+        Button8 = New Button()
+        Button9 = New Button()
+        PrintDocument1 = New Printing.PrintDocument()
         GroupBox1.SuspendLayout()
         GroupBox2.SuspendLayout()
         Panel1.SuspendLayout()
@@ -77,6 +80,7 @@ Partial Class RiwayatKonsultasi
         ' GroupBox1
         ' 
         GroupBox1.BackColor = Color.FromArgb(CByte(113), CByte(50), CByte(202))
+        GroupBox1.Controls.Add(Button8)
         GroupBox1.Controls.Add(Button1)
         GroupBox1.Controls.Add(Label9)
         GroupBox1.Controls.Add(Label8)
@@ -175,6 +179,7 @@ Partial Class RiwayatKonsultasi
         ' GroupBox2
         ' 
         GroupBox2.BackColor = Color.FromArgb(CByte(113), CByte(50), CByte(202))
+        GroupBox2.Controls.Add(Button9)
         GroupBox2.Controls.Add(Button2)
         GroupBox2.Controls.Add(Label10)
         GroupBox2.Controls.Add(Label12)
@@ -517,6 +522,26 @@ Partial Class RiwayatKonsultasi
         Panel5.Size = New Size(737, 49)
         Panel5.TabIndex = 38
         ' 
+        ' Button8
+        ' 
+        Button8.FlatStyle = FlatStyle.Flat
+        Button8.Location = New Point(244, 89)
+        Button8.Name = "Button8"
+        Button8.Size = New Size(94, 27)
+        Button8.TabIndex = 8
+        Button8.Text = "Cetak"
+        Button8.UseVisualStyleBackColor = True
+        ' 
+        ' Button9
+        ' 
+        Button9.FlatStyle = FlatStyle.Flat
+        Button9.Location = New Point(244, 89)
+        Button9.Name = "Button9"
+        Button9.Size = New Size(94, 27)
+        Button9.TabIndex = 8
+        Button9.Text = "Cetak"
+        Button9.UseVisualStyleBackColor = True
+        ' 
         ' RiwayatKonsultasi
         ' 
         AutoScaleDimensions = New SizeF(9F, 20F)
@@ -530,7 +555,7 @@ Partial Class RiwayatKonsultasi
         Controls.Add(Panel5)
         Font = New Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Name = "RiwayatKonsultasi"
-        Text = "RiwayatKonsultasi"
+        Text = "Riwayat Konsultasi"
         GroupBox1.ResumeLayout(False)
         GroupBox1.PerformLayout()
         GroupBox2.ResumeLayout(False)
@@ -586,4 +611,7 @@ Partial Class RiwayatKonsultasi
     Friend WithEvents Label11 As Label
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents Panel5 As Panel
+    Friend WithEvents Button8 As Button
+    Friend WithEvents Button9 As Button
+    Friend WithEvents PrintDocument1 As Printing.PrintDocument
 End Class
