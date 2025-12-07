@@ -11,7 +11,7 @@ Module ModulKoneksi
 
     Public Sub BukaKoneksi()
         Try
-            str = "server=localhost;user id=root;password=;database=db_sistempakar"
+            str = "server=localhost;user id=root;password=;database=db_Sistempakar"
             conn = New MySqlConnection(str)
             If conn.State = ConnectionState.Closed Then
                 conn.Open()
