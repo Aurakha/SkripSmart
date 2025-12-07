@@ -107,7 +107,7 @@ Partial Class Dashboard
         Label22.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold)
         Label22.Location = New Point(561, 45)
         Label22.Name = "Label22"
-        Label22.Size = New Size(76, 20)
+        Label22.Size = New Size(93, 25)
         Label22.TabIndex = 16
         Label22.Text = "Label Jam"
         ' 
@@ -119,58 +119,58 @@ Partial Class Dashboard
         MenuStrip1.Name = "MenuStrip1"
         MenuStrip1.Padding = New Padding(8, 3, 0, 3)
         MenuStrip1.RenderMode = ToolStripRenderMode.Professional
-        MenuStrip1.Size = New Size(659, 30)
+        MenuStrip1.Size = New Size(659, 35)
         MenuStrip1.TabIndex = 1
         MenuStrip1.Text = "MenuStrip1"
         ' 
         ' BerandaToolStripMenuItem
         ' 
         BerandaToolStripMenuItem.Name = "BerandaToolStripMenuItem"
-        BerandaToolStripMenuItem.Size = New Size(129, 24)
+        BerandaToolStripMenuItem.Size = New Size(156, 29)
         BerandaToolStripMenuItem.Text = "📊 Dashboard  "
         ' 
         ' KonsultasiToolStripMenuItem
         ' 
         KonsultasiToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {SemuaRiwayatToolStripMenuItem, HasilRekomendasiToolStripMenuItem, DetailKonsultasiToolStripMenuItem})
         KonsultasiToolStripMenuItem.Name = "KonsultasiToolStripMenuItem"
-        KonsultasiToolStripMenuItem.Size = New Size(115, 24)
+        KonsultasiToolStripMenuItem.Size = New Size(138, 29)
         KonsultasiToolStripMenuItem.Text = ChrW(55358) & ChrW(56800) & " Konsultasi"
         ' 
         ' SemuaRiwayatToolStripMenuItem
         ' 
         SemuaRiwayatToolStripMenuItem.Name = "SemuaRiwayatToolStripMenuItem"
-        SemuaRiwayatToolStripMenuItem.Size = New Size(138, 26)
+        SemuaRiwayatToolStripMenuItem.Size = New Size(168, 34)
         SemuaRiwayatToolStripMenuItem.Text = "Level 1"
         ' 
         ' HasilRekomendasiToolStripMenuItem
         ' 
         HasilRekomendasiToolStripMenuItem.Name = "HasilRekomendasiToolStripMenuItem"
-        HasilRekomendasiToolStripMenuItem.Size = New Size(138, 26)
+        HasilRekomendasiToolStripMenuItem.Size = New Size(168, 34)
         HasilRekomendasiToolStripMenuItem.Text = "Level 2"
         ' 
         ' DetailKonsultasiToolStripMenuItem
         ' 
         DetailKonsultasiToolStripMenuItem.Name = "DetailKonsultasiToolStripMenuItem"
-        DetailKonsultasiToolStripMenuItem.Size = New Size(138, 26)
+        DetailKonsultasiToolStripMenuItem.Size = New Size(168, 34)
         DetailKonsultasiToolStripMenuItem.Text = "Level 3"
         ' 
         ' RiwayatKonsultasiToolStripMenuItem
         ' 
         RiwayatKonsultasiToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {SemuaRiwayatToolStripMenuItem1, HasilRekomendasiToolStripMenuItem1})
         RiwayatKonsultasiToolStripMenuItem.Name = "RiwayatKonsultasiToolStripMenuItem"
-        RiwayatKonsultasiToolStripMenuItem.Size = New Size(171, 24)
+        RiwayatKonsultasiToolStripMenuItem.Size = New Size(204, 29)
         RiwayatKonsultasiToolStripMenuItem.Text = "📝 Riwayat Konsultasi"
         ' 
         ' SemuaRiwayatToolStripMenuItem1
         ' 
         SemuaRiwayatToolStripMenuItem1.Name = "SemuaRiwayatToolStripMenuItem1"
-        SemuaRiwayatToolStripMenuItem1.Size = New Size(243, 26)
+        SemuaRiwayatToolStripMenuItem1.Size = New Size(293, 34)
         SemuaRiwayatToolStripMenuItem1.Text = "📅 Semua Riwayat"
         ' 
         ' HasilRekomendasiToolStripMenuItem1
         ' 
         HasilRekomendasiToolStripMenuItem1.Name = "HasilRekomendasiToolStripMenuItem1"
-        HasilRekomendasiToolStripMenuItem1.Size = New Size(243, 26)
+        HasilRekomendasiToolStripMenuItem1.Size = New Size(293, 34)
         HasilRekomendasiToolStripMenuItem1.Text = "🎯 Hasil Rekomendasi"
         ' 
         ' Label19
@@ -179,7 +179,7 @@ Partial Class Dashboard
         Label19.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold)
         Label19.Location = New Point(438, 45)
         Label19.Name = "Label19"
-        Label19.Size = New Size(80, 20)
+        Label19.Size = New Size(97, 25)
         Label19.TabIndex = 2
         Label19.Text = "Halo, User"
         ' 
@@ -223,7 +223,7 @@ Partial Class Dashboard
         Label5.Font = New Font("Segoe UI Semibold", 8F, FontStyle.Bold)
         Label5.Location = New Point(46, 44)
         Label5.Name = "Label5"
-        Label5.Size = New Size(544, 38)
+        Label5.Size = New Size(629, 42)
         Label5.TabIndex = 1
         Label5.Text = "SkripSmart memakai metode forward chaining, yaitu proses menarik kesimpulan dari " & vbCrLf & "serangkaian fakta (jawaban pengguna) menuju rekomendasi topik paling cocok."
         Label5.TextAlign = ContentAlignment.TopCenter
@@ -246,7 +246,7 @@ Partial Class Dashboard
         Label4.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold)
         Label4.Location = New Point(42, 44)
         Label4.Name = "Label4"
-        Label4.Size = New Size(413, 20)
+        Label4.Size = New Size(505, 25)
         Label4.TabIndex = 1
         Label4.Text = "Setiap keputusan yang dihasilkan sistem " & ChrW(8220) & "dapat dijelaskan" & ChrW(8221) & "."
         ' 
@@ -256,7 +256,7 @@ Partial Class Dashboard
         Label3.Font = New Font("Segoe UI Semibold", 10F, FontStyle.Bold)
         Label3.Location = New Point(72, 21)
         Label3.Name = "Label3"
-        Label3.Size = New Size(0, 23)
+        Label3.Size = New Size(0, 28)
         Label3.TabIndex = 0
         ' 
         ' Label2
@@ -269,7 +269,7 @@ Partial Class Dashboard
         Label2.Location = New Point(967, 124)
         Label2.Margin = New Padding(4, 0, 4, 0)
         Label2.Name = "Label2"
-        Label2.Size = New Size(180, 31)
+        Label2.Size = New Size(208, 34)
         Label2.TabIndex = 6
         Label2.Text = "SKRIPSMART"
         ' 
@@ -281,7 +281,7 @@ Partial Class Dashboard
         Label1.Location = New Point(769, 155)
         Label1.Margin = New Padding(4, 0, 4, 0)
         Label1.Name = "Label1"
-        Label1.Size = New Size(554, 22)
+        Label1.Size = New Size(667, 27)
         Label1.TabIndex = 7
         Label1.Text = """Temukan topik yang paling cocok dengan minat, kemampuan dan jurusanmu"""
         ' 
@@ -321,7 +321,7 @@ Partial Class Dashboard
         Label15.Font = New Font("Segoe UI Semibold", 8F, FontStyle.Bold)
         Label15.Location = New Point(6, 67)
         Label15.Name = "Label15"
-        Label15.Size = New Size(221, 38)
+        Label15.Size = New Size(253, 42)
         Label15.TabIndex = 1
         Label15.Text = "Setiap keputusan yang dihasilkan " & vbCrLf & "sistem " & ChrW(8220) & "dapat dijelaskan" & ChrW(8221) & "."
         ' 
@@ -331,7 +331,7 @@ Partial Class Dashboard
         Label16.Font = New Font("Segoe UI Semibold", 10F, FontStyle.Bold)
         Label16.Location = New Point(72, 21)
         Label16.Name = "Label16"
-        Label16.Size = New Size(0, 23)
+        Label16.Size = New Size(0, 28)
         Label16.TabIndex = 0
         ' 
         ' GroupBox7
@@ -352,7 +352,7 @@ Partial Class Dashboard
         Label9.Font = New Font("Segoe UI Semibold", 8F, FontStyle.Bold)
         Label9.Location = New Point(6, 67)
         Label9.Name = "Label9"
-        Label9.Size = New Size(207, 38)
+        Label9.Size = New Size(237, 42)
         Label9.TabIndex = 1
         Label9.Text = "Hasilnya digunakan untuk " & vbCrLf & "memilih list pertanyaan Level 3."
         ' 
@@ -362,7 +362,7 @@ Partial Class Dashboard
         Label10.Font = New Font("Segoe UI Semibold", 10F, FontStyle.Bold)
         Label10.Location = New Point(72, 21)
         Label10.Name = "Label10"
-        Label10.Size = New Size(0, 23)
+        Label10.Size = New Size(0, 28)
         Label10.TabIndex = 0
         ' 
         ' GroupBox9
@@ -383,7 +383,7 @@ Partial Class Dashboard
         Label13.Font = New Font("Segoe UI Semibold", 8F, FontStyle.Bold)
         Label13.Location = New Point(6, 67)
         Label13.Name = "Label13"
-        Label13.Size = New Size(266, 38)
+        Label13.Size = New Size(303, 42)
         Label13.TabIndex = 1
         Label13.Text = "Sistem melakukan forward chaining " & vbCrLf & "untuk memilih judul skripsi yang relevan."
         ' 
@@ -393,7 +393,7 @@ Partial Class Dashboard
         Label14.Font = New Font("Segoe UI Semibold", 10F, FontStyle.Bold)
         Label14.Location = New Point(72, 21)
         Label14.Name = "Label14"
-        Label14.Size = New Size(0, 23)
+        Label14.Size = New Size(0, 28)
         Label14.TabIndex = 0
         ' 
         ' GroupBox8
@@ -414,7 +414,7 @@ Partial Class Dashboard
         Label11.Font = New Font("Segoe UI Semibold", 8F, FontStyle.Bold)
         Label11.Location = New Point(6, 91)
         Label11.Name = "Label11"
-        Label11.Size = New Size(228, 38)
+        Label11.Size = New Size(261, 42)
         Label11.TabIndex = 1
         Label11.Text = "Output Level 3 untuk Menentukan " & vbCrLf & "SUB-BIDANG yang paling cocok."
         ' 
@@ -424,7 +424,7 @@ Partial Class Dashboard
         Label12.Font = New Font("Segoe UI Semibold", 10F, FontStyle.Bold)
         Label12.Location = New Point(72, 21)
         Label12.Name = "Label12"
-        Label12.Size = New Size(0, 23)
+        Label12.Size = New Size(0, 28)
         Label12.TabIndex = 0
         ' 
         ' GroupBox5
@@ -444,7 +444,7 @@ Partial Class Dashboard
         Label6.Font = New Font("Segoe UI Semibold", 8F, FontStyle.Bold)
         Label6.Location = New Point(6, 65)
         Label6.Name = "Label6"
-        Label6.Size = New Size(210, 38)
+        Label6.Size = New Size(241, 42)
         Label6.TabIndex = 1
         Label6.Text = "Output Level 1 mengarahkan ke " & vbCrLf & "list pertanyaan Prodi."
         ' 
@@ -466,7 +466,7 @@ Partial Class Dashboard
         Label7.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold)
         Label7.Location = New Point(6, 44)
         Label7.Name = "Label7"
-        Label7.Size = New Size(263, 40)
+        Label7.Size = New Size(318, 50)
         Label7.TabIndex = 1
         Label7.Text = "Sistem menyimpan identitas dan " & vbCrLf & "masuk ke tahap pertanyaan pertama."
         ' 
@@ -476,7 +476,7 @@ Partial Class Dashboard
         Label8.Font = New Font("Segoe UI Semibold", 10F, FontStyle.Bold)
         Label8.Location = New Point(72, 21)
         Label8.Name = "Label8"
-        Label8.Size = New Size(0, 23)
+        Label8.Size = New Size(0, 28)
         Label8.TabIndex = 0
         ' 
         ' Panel2
@@ -492,7 +492,7 @@ Partial Class Dashboard
         Label17.AutoSize = True
         Label17.Location = New Point(867, 15)
         Label17.Name = "Label17"
-        Label17.Size = New Size(388, 28)
+        Label17.Size = New Size(463, 32)
         Label17.TabIndex = 0
         Label17.Text = "© 2025 SKRIPSMART. All Rights Reserved"
         ' 
@@ -502,7 +502,7 @@ Partial Class Dashboard
         Label18.Font = New Font("Segoe UI Semibold", 14F, FontStyle.Bold)
         Label18.Location = New Point(902, 836)
         Label18.Name = "Label18"
-        Label18.Size = New Size(314, 32)
+        Label18.Size = New Size(366, 38)
         Label18.TabIndex = 10
         Label18.Text = "  " & ChrW(8220) & "Siap temukan topikmu?" & ChrW(8221) & " "
         ' 
@@ -539,7 +539,7 @@ Partial Class Dashboard
         Label20.BorderStyle = BorderStyle.Fixed3D
         Label20.Location = New Point(1375, 241)
         Label20.Name = "Label20"
-        Label20.Size = New Size(214, 30)
+        Label20.Size = New Size(254, 34)
         Label20.TabIndex = 14
         Label20.Text = "Konsultasi bulan ini: 5"
         ' 
@@ -549,15 +549,15 @@ Partial Class Dashboard
         Label21.BorderStyle = BorderStyle.Fixed3D
         Label21.Location = New Point(1375, 285)
         Label21.Name = "Label21"
-        Label21.Size = New Size(478, 30)
+        Label21.Size = New Size(570, 34)
         Label21.TabIndex = 15
         Label21.Text = "Topik paling di rekomendasikan: Machine Learning"
         ' 
         ' Dashboard
         ' 
-        AutoScaleDimensions = New SizeF(11F, 28F)
+        AutoScaleDimensions = New SizeF(14F, 32F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1924, 1055)
+        ClientSize = New Size(1924, 1050)
         Controls.Add(Label21)
         Controls.Add(Label20)
         Controls.Add(Chart1)

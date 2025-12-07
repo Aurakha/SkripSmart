@@ -20,11 +20,7 @@
 
   <ItemGroup>
     <PackageReference Include="MySql.Data" Version="9.5.0" />
-<<<<<<< HEAD
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
-=======
     <PackageReference Include="WinForms.DataVisualization" Version="1.10.0" />
->>>>>>> a147cdbdbbbe16911c883cb19b2f27c2c65bfe9a
   </ItemGroup>
 
   <ItemGroup>

@@ -80,9 +80,10 @@ Partial Class Konsultasi
         Panel1.Controls.Add(Label8)
         Panel1.Controls.Add(Label7)
         Panel1.Controls.Add(MenuStrip1)
-        Panel1.Location = New Point(-6, 0)
+        Panel1.Location = New Point(-8, 0)
+        Panel1.Margin = New Padding(4)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(811, 62)
+        Panel1.Size = New Size(1014, 78)
         Panel1.TabIndex = 0
         ' 
         ' Panel4
@@ -90,18 +91,20 @@ Partial Class Konsultasi
         Panel4.Controls.Add(Label9)
         Panel4.Controls.Add(Label10)
         Panel4.Controls.Add(MenuStrip2)
-        Panel4.Location = New Point(-6, 0)
+        Panel4.Location = New Point(-8, 0)
+        Panel4.Margin = New Padding(4)
         Panel4.Name = "Panel4"
-        Panel4.Size = New Size(822, 62)
+        Panel4.Size = New Size(1028, 78)
         Panel4.TabIndex = 32
         ' 
         ' Label9
         ' 
         Label9.AutoSize = True
         Label9.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label9.Location = New Point(513, 35)
+        Label9.Location = New Point(641, 44)
+        Label9.Margin = New Padding(4, 0, 4, 0)
         Label9.Name = "Label9"
-        Label9.Size = New Size(80, 20)
+        Label9.Size = New Size(98, 25)
         Label9.TabIndex = 12
         Label9.Text = "Label Jam "
         ' 
@@ -109,9 +112,10 @@ Partial Class Konsultasi
         ' 
         Label10.AutoSize = True
         Label10.Font = New Font("Segoe UI Semibold", 10F, FontStyle.Bold)
-        Label10.Location = New Point(636, 33)
+        Label10.Location = New Point(795, 41)
+        Label10.Margin = New Padding(4, 0, 4, 0)
         Label10.Name = "Label10"
-        Label10.Size = New Size(134, 23)
+        Label10.Size = New Size(160, 28)
         Label10.TabIndex = 11
         Label10.Text = "Kategori: Level 1"
         Label10.TextAlign = ContentAlignment.TopCenter
@@ -122,67 +126,69 @@ Partial Class Konsultasi
         MenuStrip2.Items.AddRange(New ToolStripItem() {ToolStripMenuItem1, ToolStripMenuItem2, ToolStripMenuItem6})
         MenuStrip2.Location = New Point(0, 0)
         MenuStrip2.Name = "MenuStrip2"
-        MenuStrip2.Size = New Size(822, 28)
+        MenuStrip2.Padding = New Padding(8, 2, 0, 2)
+        MenuStrip2.Size = New Size(1028, 33)
         MenuStrip2.TabIndex = 13
         MenuStrip2.Text = "MenuStrip1"
         ' 
         ' ToolStripMenuItem1
         ' 
         ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        ToolStripMenuItem1.Size = New Size(129, 24)
+        ToolStripMenuItem1.Size = New Size(156, 29)
         ToolStripMenuItem1.Text = "📊 Dashboard  "
         ' 
         ' ToolStripMenuItem2
         ' 
         ToolStripMenuItem2.DropDownItems.AddRange(New ToolStripItem() {ToolStripMenuItem3, ToolStripMenuItem4, ToolStripMenuItem5})
         ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        ToolStripMenuItem2.Size = New Size(115, 24)
+        ToolStripMenuItem2.Size = New Size(138, 29)
         ToolStripMenuItem2.Text = ChrW(55358) & ChrW(56800) & " Konsultasi"
         ' 
         ' ToolStripMenuItem3
         ' 
         ToolStripMenuItem3.Name = "ToolStripMenuItem3"
-        ToolStripMenuItem3.Size = New Size(138, 26)
+        ToolStripMenuItem3.Size = New Size(168, 34)
         ToolStripMenuItem3.Text = "Level 1"
         ' 
         ' ToolStripMenuItem4
         ' 
         ToolStripMenuItem4.Name = "ToolStripMenuItem4"
-        ToolStripMenuItem4.Size = New Size(138, 26)
+        ToolStripMenuItem4.Size = New Size(168, 34)
         ToolStripMenuItem4.Text = "Level 2"
         ' 
         ' ToolStripMenuItem5
         ' 
         ToolStripMenuItem5.Name = "ToolStripMenuItem5"
-        ToolStripMenuItem5.Size = New Size(138, 26)
+        ToolStripMenuItem5.Size = New Size(168, 34)
         ToolStripMenuItem5.Text = "Level 3"
         ' 
         ' ToolStripMenuItem6
         ' 
         ToolStripMenuItem6.DropDownItems.AddRange(New ToolStripItem() {ToolStripMenuItem7, ToolStripMenuItem8})
         ToolStripMenuItem6.Name = "ToolStripMenuItem6"
-        ToolStripMenuItem6.Size = New Size(171, 24)
+        ToolStripMenuItem6.Size = New Size(204, 29)
         ToolStripMenuItem6.Text = "📝 Riwayat Konsultasi"
         ' 
         ' ToolStripMenuItem7
         ' 
         ToolStripMenuItem7.Name = "ToolStripMenuItem7"
-        ToolStripMenuItem7.Size = New Size(243, 26)
+        ToolStripMenuItem7.Size = New Size(293, 34)
         ToolStripMenuItem7.Text = "📅 Semua Riwayat"
         ' 
         ' ToolStripMenuItem8
         ' 
         ToolStripMenuItem8.Name = "ToolStripMenuItem8"
-        ToolStripMenuItem8.Size = New Size(243, 26)
+        ToolStripMenuItem8.Size = New Size(293, 34)
         ToolStripMenuItem8.Text = "🎯 Hasil Rekomendasi"
         ' 
         ' Label8
         ' 
         Label8.AutoSize = True
         Label8.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label8.Location = New Point(513, 35)
+        Label8.Location = New Point(641, 44)
+        Label8.Margin = New Padding(4, 0, 4, 0)
         Label8.Name = "Label8"
-        Label8.Size = New Size(80, 20)
+        Label8.Size = New Size(98, 25)
         Label8.TabIndex = 12
         Label8.Text = "Label Jam "
         ' 
@@ -190,9 +196,10 @@ Partial Class Konsultasi
         ' 
         Label7.AutoSize = True
         Label7.Font = New Font("Segoe UI Semibold", 10F, FontStyle.Bold)
-        Label7.Location = New Point(636, 33)
+        Label7.Location = New Point(795, 41)
+        Label7.Margin = New Padding(4, 0, 4, 0)
         Label7.Name = "Label7"
-        Label7.Size = New Size(134, 23)
+        Label7.Size = New Size(160, 28)
         Label7.TabIndex = 11
         Label7.Text = "Kategori: Level 1"
         Label7.TextAlign = ContentAlignment.TopCenter
@@ -203,58 +210,59 @@ Partial Class Konsultasi
         MenuStrip1.Items.AddRange(New ToolStripItem() {HomeToolStripMenuItem, KonsultasiToolStripMenuItem, RiwayatKonsultasiToolStripMenuItem})
         MenuStrip1.Location = New Point(0, 0)
         MenuStrip1.Name = "MenuStrip1"
-        MenuStrip1.Size = New Size(811, 28)
+        MenuStrip1.Padding = New Padding(8, 2, 0, 2)
+        MenuStrip1.Size = New Size(1014, 33)
         MenuStrip1.TabIndex = 13
         MenuStrip1.Text = "MenuStrip1"
         ' 
         ' HomeToolStripMenuItem
         ' 
         HomeToolStripMenuItem.Name = "HomeToolStripMenuItem"
-        HomeToolStripMenuItem.Size = New Size(89, 24)
+        HomeToolStripMenuItem.Size = New Size(107, 29)
         HomeToolStripMenuItem.Text = "🏠 Home"
         ' 
         ' KonsultasiToolStripMenuItem
         ' 
         KonsultasiToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {KategoriLevel1ToolStripMenuItem, Level2ToolStripMenuItem, Level3ToolStripMenuItem})
         KonsultasiToolStripMenuItem.Name = "KonsultasiToolStripMenuItem"
-        KonsultasiToolStripMenuItem.Size = New Size(115, 24)
+        KonsultasiToolStripMenuItem.Size = New Size(138, 29)
         KonsultasiToolStripMenuItem.Text = ChrW(55358) & ChrW(56800) & " Konsultasi"
         ' 
         ' KategoriLevel1ToolStripMenuItem
         ' 
         KategoriLevel1ToolStripMenuItem.Name = "KategoriLevel1ToolStripMenuItem"
-        KategoriLevel1ToolStripMenuItem.Size = New Size(138, 26)
+        KategoriLevel1ToolStripMenuItem.Size = New Size(168, 34)
         KategoriLevel1ToolStripMenuItem.Text = "Level 1"
         ' 
         ' Level2ToolStripMenuItem
         ' 
         Level2ToolStripMenuItem.Name = "Level2ToolStripMenuItem"
-        Level2ToolStripMenuItem.Size = New Size(138, 26)
+        Level2ToolStripMenuItem.Size = New Size(168, 34)
         Level2ToolStripMenuItem.Text = "Level 2"
         ' 
         ' Level3ToolStripMenuItem
         ' 
         Level3ToolStripMenuItem.Name = "Level3ToolStripMenuItem"
-        Level3ToolStripMenuItem.Size = New Size(138, 26)
+        Level3ToolStripMenuItem.Size = New Size(168, 34)
         Level3ToolStripMenuItem.Text = "Level 3"
         ' 
         ' RiwayatKonsultasiToolStripMenuItem
         ' 
         RiwayatKonsultasiToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {SemuaRiwayatToolStripMenuItem, HasilRekomendasiToolStripMenuItem1})
         RiwayatKonsultasiToolStripMenuItem.Name = "RiwayatKonsultasiToolStripMenuItem"
-        RiwayatKonsultasiToolStripMenuItem.Size = New Size(171, 24)
+        RiwayatKonsultasiToolStripMenuItem.Size = New Size(204, 29)
         RiwayatKonsultasiToolStripMenuItem.Text = "📝 Riwayat Konsultasi"
         ' 
         ' SemuaRiwayatToolStripMenuItem
         ' 
         SemuaRiwayatToolStripMenuItem.Name = "SemuaRiwayatToolStripMenuItem"
-        SemuaRiwayatToolStripMenuItem.Size = New Size(243, 26)
+        SemuaRiwayatToolStripMenuItem.Size = New Size(293, 34)
         SemuaRiwayatToolStripMenuItem.Text = "📅 Semua Riwayat"
         ' 
         ' HasilRekomendasiToolStripMenuItem1
         ' 
         HasilRekomendasiToolStripMenuItem1.Name = "HasilRekomendasiToolStripMenuItem1"
-        HasilRekomendasiToolStripMenuItem1.Size = New Size(243, 26)
+        HasilRekomendasiToolStripMenuItem1.Size = New Size(293, 34)
         HasilRekomendasiToolStripMenuItem1.Text = "🎯 Hasil Rekomendasi"
         ' 
         ' Panel2
@@ -267,16 +275,18 @@ Partial Class Konsultasi
         Panel2.Controls.Add(Label2)
         Panel2.Controls.Add(ProgressBar1)
         Panel2.Controls.Add(Label1)
-        Panel2.Location = New Point(1, 68)
+        Panel2.Location = New Point(1, 85)
+        Panel2.Margin = New Padding(4)
         Panel2.Name = "Panel2"
-        Panel2.Size = New Size(220, 321)
+        Panel2.Size = New Size(275, 401)
         Panel2.TabIndex = 1
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(44, 263)
+        Button1.Location = New Point(55, 329)
+        Button1.Margin = New Padding(4)
         Button1.Name = "Button1"
-        Button1.Size = New Size(138, 29)
+        Button1.Size = New Size(172, 36)
         Button1.TabIndex = 5
         Button1.Text = "Keluar"
         Button1.UseVisualStyleBackColor = True
@@ -284,61 +294,68 @@ Partial Class Konsultasi
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Location = New Point(12, 217)
+        Label5.Location = New Point(15, 271)
+        Label5.Margin = New Padding(4, 0, 4, 0)
         Label5.Name = "Label5"
-        Label5.Size = New Size(84, 20)
+        Label5.Size = New Size(102, 25)
         Label5.TabIndex = 4
         Label5.Text = "Level 3: 1/2"
         ' 
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Location = New Point(12, 188)
+        Label4.Location = New Point(15, 235)
+        Label4.Margin = New Padding(4, 0, 4, 0)
         Label4.Name = "Label4"
-        Label4.Size = New Size(84, 20)
+        Label4.Size = New Size(102, 25)
         Label4.TabIndex = 3
         Label4.Text = "Level 2: 0/3"
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(12, 159)
+        Label3.Location = New Point(15, 199)
+        Label3.Margin = New Padding(4, 0, 4, 0)
         Label3.Name = "Label3"
-        Label3.Size = New Size(84, 20)
+        Label3.Size = New Size(102, 25)
         Label3.TabIndex = 2
         Label3.Text = "Level 1: 2/4"
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(12, 124)
+        Label2.Location = New Point(15, 155)
+        Label2.Margin = New Padding(4, 0, 4, 0)
         Label2.Name = "Label2"
-        Label2.Size = New Size(137, 20)
+        Label2.Size = New Size(165, 25)
         Label2.TabIndex = 2
         Label2.Text = "Ringkasan Jawaban"
         ' 
         ' ProgressBar1
         ' 
-        ProgressBar1.Location = New Point(11, 70)
+        ProgressBar1.Location = New Point(14, 88)
+        ProgressBar1.Margin = New Padding(4)
         ProgressBar1.Name = "ProgressBar1"
-        ProgressBar1.Size = New Size(197, 29)
+        ProgressBar1.Size = New Size(246, 36)
         ProgressBar1.TabIndex = 1
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(72, 25)
+        Label1.Location = New Point(90, 31)
+        Label1.Margin = New Padding(4, 0, 4, 0)
         Label1.Name = "Label1"
-        Label1.Size = New Size(80, 20)
+        Label1.Size = New Size(97, 25)
         Label1.TabIndex = 0
         Label1.Text = "Halo, User"
         ' 
         ' Button3
         ' 
-        Button3.Location = New Point(591, 532)
+        Button3.Location = New Point(740, 612)
+        Button3.Margin = New Padding(4)
         Button3.Name = "Button3"
-        Button3.Size = New Size(173, 39)
+        Button3.Size = New Size(216, 49)
         Button3.TabIndex = 7
         Button3.Text = "Selanjutnya →"
         Button3.UseVisualStyleBackColor = True
@@ -347,18 +364,20 @@ Partial Class Konsultasi
         ' 
         Panel3.BackColor = SystemColors.ActiveCaption
         Panel3.Controls.Add(Label6)
-        Panel3.Location = New Point(254, 93)
+        Panel3.Location = New Point(318, 116)
+        Panel3.Margin = New Padding(4)
         Panel3.Name = "Panel3"
-        Panel3.Size = New Size(510, 74)
+        Panel3.Size = New Size(638, 92)
         Panel3.TabIndex = 9
         ' 
         ' Label6
         ' 
         Label6.AutoSize = True
         Label6.Font = New Font("Segoe UI Semibold", 10F, FontStyle.Bold)
-        Label6.Location = New Point(114, 14)
+        Label6.Location = New Point(18, 18)
+        Label6.Margin = New Padding(4, 0, 4, 0)
         Label6.Name = "Label6"
-        Label6.Size = New Size(285, 46)
+        Label6.Size = New Size(339, 56)
         Label6.TabIndex = 0
         Label6.Text = "Seberapa kuat kemampuan analisis " & vbCrLf & "dan pemecahan masalah kamu?"
         Label6.TextAlign = ContentAlignment.TopCenter
@@ -366,9 +385,10 @@ Partial Class Konsultasi
         ' RadioButton4
         ' 
         RadioButton4.AutoSize = True
-        RadioButton4.Location = New Point(45, 186)
+        RadioButton4.Location = New Point(56, 232)
+        RadioButton4.Margin = New Padding(4)
         RadioButton4.Name = "RadioButton4"
-        RadioButton4.Size = New Size(84, 24)
+        RadioButton4.Size = New Size(102, 29)
         RadioButton4.TabIndex = 3
         RadioButton4.TabStop = True
         RadioButton4.Text = "4 - Kuat"
@@ -377,9 +397,10 @@ Partial Class Konsultasi
         ' RadioButton3
         ' 
         RadioButton3.AutoSize = True
-        RadioButton3.Location = New Point(45, 139)
+        RadioButton3.Location = New Point(56, 174)
+        RadioButton3.Margin = New Padding(4)
         RadioButton3.Name = "RadioButton3"
-        RadioButton3.Size = New Size(131, 24)
+        RadioButton3.Size = New Size(160, 29)
         RadioButton3.TabIndex = 2
         RadioButton3.TabStop = True
         RadioButton3.Text = "3 - Cukup Kuat"
@@ -388,9 +409,10 @@ Partial Class Konsultasi
         ' RadioButton2
         ' 
         RadioButton2.AutoSize = True
-        RadioButton2.Location = New Point(46, 93)
+        RadioButton2.Location = New Point(58, 116)
+        RadioButton2.Margin = New Padding(4)
         RadioButton2.Name = "RadioButton2"
-        RadioButton2.Size = New Size(124, 24)
+        RadioButton2.Size = New Size(151, 29)
         RadioButton2.TabIndex = 1
         RadioButton2.TabStop = True
         RadioButton2.Text = "2 - Tidak Kuat"
@@ -399,9 +421,10 @@ Partial Class Konsultasi
         ' RadioButton1
         ' 
         RadioButton1.AutoSize = True
-        RadioButton1.Location = New Point(46, 49)
+        RadioButton1.Location = New Point(58, 61)
+        RadioButton1.Margin = New Padding(4)
         RadioButton1.Name = "RadioButton1"
-        RadioButton1.Size = New Size(173, 24)
+        RadioButton1.Size = New Size(210, 29)
         RadioButton1.TabIndex = 0
         RadioButton1.TabStop = True
         RadioButton1.Text = "1 - Sangat Tidak Kuat"
@@ -415,9 +438,11 @@ Partial Class Konsultasi
         GroupBox1.Controls.Add(RadioButton2)
         GroupBox1.Controls.Add(RadioButton1)
         GroupBox1.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        GroupBox1.Location = New Point(254, 192)
+        GroupBox1.Location = New Point(318, 240)
+        GroupBox1.Margin = New Padding(4)
         GroupBox1.Name = "GroupBox1"
-        GroupBox1.Size = New Size(510, 283)
+        GroupBox1.Padding = New Padding(4)
+        GroupBox1.Size = New Size(638, 354)
         GroupBox1.TabIndex = 16
         GroupBox1.TabStop = False
         GroupBox1.Text = "Silahkan pilih salah satu jawaban"
@@ -425,9 +450,10 @@ Partial Class Konsultasi
         ' RadioButton5
         ' 
         RadioButton5.AutoSize = True
-        RadioButton5.Location = New Point(46, 232)
+        RadioButton5.Location = New Point(58, 290)
+        RadioButton5.Margin = New Padding(4)
         RadioButton5.Name = "RadioButton5"
-        RadioButton5.Size = New Size(134, 24)
+        RadioButton5.Size = New Size(164, 29)
         RadioButton5.TabIndex = 4
         RadioButton5.TabStop = True
         RadioButton5.Text = "5 - Sangat Kuat"
@@ -435,15 +461,16 @@ Partial Class Konsultasi
         ' 
         ' Konsultasi
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 606)
+        ClientSize = New Size(1000, 758)
         Controls.Add(GroupBox1)
         Controls.Add(Panel3)
         Controls.Add(Button3)
         Controls.Add(Panel2)
         Controls.Add(Panel1)
         MainMenuStrip = MenuStrip1
+        Margin = New Padding(4)
         Name = "Konsultasi"
         Text = "Konsultasi Level 1"
         Panel1.ResumeLayout(False)

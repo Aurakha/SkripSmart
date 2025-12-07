@@ -1,9 +1,13 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class LoginForm
+    ' Variabel publik untuk menyimpan id akun yang login
+    Public Property IdAkunAktif As Integer = 0
 
     ' 1. Saat Form Login Dibuka
     Private Sub LoginForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.StartPosition = FormStartPosition.CenterScreen
+        Me.WindowState = FormWindowState.Normal
         BukaKoneksi()
         txtUsername.Text = ""
         txtPassword.Text = ""
@@ -37,9 +41,16 @@ Public Class LoginForm
                 ' === LOGIN SUKSES ===
                 MsgBox("Login Berhasil! Selamat Datang, " & txtUsername.Text, MsgBoxStyle.Information, "Sukses")
 
+                ' Ambil id_akun dari hasil query
+                If Not IsDBNull(dr("id_akun")) Then
+                    IdAkunAktif = Convert.ToInt32(dr("id_akun"))
+                Else
+                    IdAkunAktif = 0
+                End If
+
                 ' Sembunyikan Login, Buka Menu Utama
                 Me.Hide()
-                Form1.Show()
+                Dashboard.Show()
             Else
                 ' === LOGIN GAGAL ===
                 MsgBox("Username atau Password Salah!", MsgBoxStyle.Critical, "Gagal Login")
@@ -62,7 +73,7 @@ Public Class LoginForm
     ' 4. Tombol DAFTAR (Pindah ke Form Register)
     ' Pastikan kamu sudah buat tombol/link label buat daftar di desain Login
     Private Sub btnDaftar_Click(sender As Object, e As EventArgs) Handles btnDaftar.Click
-        FormRegister.Show()
+        Register.Show()
         Me.Hide()
     End Sub
 
@@ -73,4 +84,7 @@ Public Class LoginForm
         End If
     End Sub
 
+    Private Sub PanelHeader_Paint(sender As Object, e As PaintEventArgs) Handles PanelHeader.Paint
+
+    End Sub
 End Class

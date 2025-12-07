@@ -68,4 +68,7 @@ Public Class FormRegister
         Me.Close()
     End Sub
 
+    Private Sub PanelHeader_Paint(sender As Object, e As PaintEventArgs) Handles PanelHeader.Paint
+
+    End Sub
 End Class

@@ -23,7 +23,7 @@ Module ModulKoneksi
 
     ' === FUNGSI TAMBAHAN UNTUK HASHING (SHA-256) ===
     Public Function BuatHash(ByVal text As String) As String
-        Dim SHA256 As SHA256 = SHA256Managed.Create()
+        Dim SHA256 As SHA256 = SHA256.Create()
         Dim bytes As Byte() = Encoding.UTF8.GetBytes(text)
         Dim hash As Byte() = SHA256.ComputeHash(bytes)
         Dim stringBuilder As New StringBuilder()

@@ -36,9 +36,9 @@ Partial Class FormRegister
         PanelHeader.Controls.Add(LabelJudul)
         PanelHeader.Dock = DockStyle.Top
         PanelHeader.Location = New Point(0, 0)
-        PanelHeader.Margin = New Padding(5, 6, 5, 6)
+        PanelHeader.Margin = New Padding(4, 4, 4, 4)
         PanelHeader.Name = "PanelHeader"
-        PanelHeader.Size = New Size(667, 154)
+        PanelHeader.Size = New Size(467, 92)
         PanelHeader.TabIndex = 0
         ' 
         ' LabelJudul
@@ -46,10 +46,10 @@ Partial Class FormRegister
         LabelJudul.AutoSize = True
         LabelJudul.Font = New Font("Segoe UI", 18.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         LabelJudul.ForeColor = Color.White
-        LabelJudul.Location = New Point(158, 46)
-        LabelJudul.Margin = New Padding(5, 0, 5, 0)
+        LabelJudul.Location = New Point(111, 28)
+        LabelJudul.Margin = New Padding(4, 0, 4, 0)
         LabelJudul.Name = "LabelJudul"
-        LabelJudul.Size = New Size(269, 48)
+        LabelJudul.Size = New Size(182, 32)
         LabelJudul.TabIndex = 0
         LabelJudul.Text = "DAFTAR AKUN"
         ' 
@@ -58,20 +58,20 @@ Partial Class FormRegister
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 10.0F)
         Label1.ForeColor = Color.Gray
-        Label1.Location = New Point(83, 192)
-        Label1.Margin = New Padding(5, 0, 5, 0)
+        Label1.Location = New Point(58, 115)
+        Label1.Margin = New Padding(4, 0, 4, 0)
         Label1.Name = "Label1"
-        Label1.Size = New Size(99, 28)
+        Label1.Size = New Size(71, 19)
         Label1.TabIndex = 1
         Label1.Text = "Username"
         ' 
         ' txtUsername
         ' 
         txtUsername.Font = New Font("Segoe UI", 11.0F)
-        txtUsername.Location = New Point(90, 235)
-        txtUsername.Margin = New Padding(5, 6, 5, 6)
+        txtUsername.Location = New Point(63, 141)
+        txtUsername.Margin = New Padding(4, 4, 4, 4)
         txtUsername.Name = "txtUsername"
-        txtUsername.Size = New Size(481, 37)
+        txtUsername.Size = New Size(338, 27)
         txtUsername.TabIndex = 2
         ' 
         ' Label2
@@ -79,21 +79,21 @@ Partial Class FormRegister
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI", 10.0F)
         Label2.ForeColor = Color.Gray
-        Label2.Location = New Point(83, 308)
-        Label2.Margin = New Padding(5, 0, 5, 0)
+        Label2.Location = New Point(58, 185)
+        Label2.Margin = New Padding(4, 0, 4, 0)
         Label2.Name = "Label2"
-        Label2.Size = New Size(93, 28)
+        Label2.Size = New Size(67, 19)
         Label2.TabIndex = 3
         Label2.Text = "Password"
         ' 
         ' txtPassword
         ' 
         txtPassword.Font = New Font("Segoe UI", 11.0F)
-        txtPassword.Location = New Point(90, 350)
-        txtPassword.Margin = New Padding(5, 6, 5, 6)
+        txtPassword.Location = New Point(63, 210)
+        txtPassword.Margin = New Padding(4, 4, 4, 4)
         txtPassword.Name = "txtPassword"
         txtPassword.PasswordChar = "*"c
-        txtPassword.Size = New Size(481, 37)
+        txtPassword.Size = New Size(338, 27)
         txtPassword.TabIndex = 4
         ' 
         ' Label3
@@ -101,21 +101,21 @@ Partial Class FormRegister
         Label3.AutoSize = True
         Label3.Font = New Font("Segoe UI", 10.0F)
         Label3.ForeColor = Color.Gray
-        Label3.Location = New Point(83, 423)
-        Label3.Margin = New Padding(5, 0, 5, 0)
+        Label3.Location = New Point(58, 254)
+        Label3.Margin = New Padding(4, 0, 4, 0)
         Label3.Name = "Label3"
-        Label3.Size = New Size(155, 28)
+        Label3.Size = New Size(110, 19)
         Label3.TabIndex = 5
         Label3.Text = "Ulangi Password"
         ' 
         ' txtKonfirmasi
         ' 
         txtKonfirmasi.Font = New Font("Segoe UI", 11.0F)
-        txtKonfirmasi.Location = New Point(90, 465)
-        txtKonfirmasi.Margin = New Padding(5, 6, 5, 6)
+        txtKonfirmasi.Location = New Point(63, 279)
+        txtKonfirmasi.Margin = New Padding(4, 4, 4, 4)
         txtKonfirmasi.Name = "txtKonfirmasi"
         txtKonfirmasi.PasswordChar = "*"c
-        txtKonfirmasi.Size = New Size(481, 37)
+        txtKonfirmasi.Size = New Size(338, 27)
         txtKonfirmasi.TabIndex = 6
         ' 
         ' btnDaftar
@@ -126,10 +126,10 @@ Partial Class FormRegister
         btnDaftar.FlatStyle = FlatStyle.Flat
         btnDaftar.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold)
         btnDaftar.ForeColor = Color.White
-        btnDaftar.Location = New Point(90, 558)
-        btnDaftar.Margin = New Padding(5, 6, 5, 6)
+        btnDaftar.Location = New Point(63, 335)
+        btnDaftar.Margin = New Padding(4, 4, 4, 4)
         btnDaftar.Name = "btnDaftar"
-        btnDaftar.Size = New Size(483, 77)
+        btnDaftar.Size = New Size(338, 46)
         btnDaftar.TabIndex = 7
         btnDaftar.Text = "DAFTAR SEKARANG"
         btnDaftar.UseVisualStyleBackColor = False
@@ -142,20 +142,20 @@ Partial Class FormRegister
         btnKembali.FlatStyle = FlatStyle.Flat
         btnKembali.Font = New Font("Segoe UI", 9.0F, FontStyle.Underline)
         btnKembali.ForeColor = Color.Gray
-        btnKembali.Location = New Point(90, 654)
-        btnKembali.Margin = New Padding(5, 6, 5, 6)
+        btnKembali.Location = New Point(63, 392)
+        btnKembali.Margin = New Padding(4, 4, 4, 4)
         btnKembali.Name = "btnKembali"
-        btnKembali.Size = New Size(483, 58)
+        btnKembali.Size = New Size(338, 35)
         btnKembali.TabIndex = 8
         btnKembali.Text = "Sudah punya akun? Login disini"
         btnKembali.UseVisualStyleBackColor = False
         ' 
         ' FormRegister
         ' 
-        AutoScaleDimensions = New SizeF(10.0F, 25.0F)
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.White
-        ClientSize = New Size(667, 865)
+        ClientSize = New Size(467, 444)
         Controls.Add(btnKembali)
         Controls.Add(btnDaftar)
         Controls.Add(txtKonfirmasi)
@@ -166,7 +166,7 @@ Partial Class FormRegister
         Controls.Add(Label1)
         Controls.Add(PanelHeader)
         FormBorderStyle = FormBorderStyle.None
-        Margin = New Padding(5, 6, 5, 6)
+        Margin = New Padding(4, 4, 4, 4)
         Name = "FormRegister"
         StartPosition = FormStartPosition.CenterScreen
         Text = "FormRegister"
