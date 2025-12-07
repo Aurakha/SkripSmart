@@ -23,9 +23,6 @@ Partial Class Login
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Label1 = New Label()
-        TextBox1 = New TextBox()
-        Label2 = New Label()
-        Label3 = New Label()
         TextBox2 = New TextBox()
         Button1 = New Button()
         Label4 = New Label()
@@ -34,7 +31,13 @@ Partial Class Login
         Label6 = New Label()
         Label7 = New Label()
         Panel1 = New Panel()
+        Panel2 = New Panel()
+        Panel3 = New Panel()
+        TextBox3 = New TextBox()
+        Label2 = New Label()
         Panel1.SuspendLayout()
+        Panel2.SuspendLayout()
+        Panel3.SuspendLayout()
         SuspendLayout()
         ' 
         ' Label1
@@ -47,46 +50,24 @@ Partial Class Login
         Label1.TabIndex = 0
         Label1.Text = "LOGIN"
         ' 
-        ' TextBox1
-        ' 
-        TextBox1.Location = New Point(67, 156)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(290, 27)
-        TextBox1.TabIndex = 1
-        ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.Font = New Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label2.Location = New Point(67, 128)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(91, 25)
-        Label2.TabIndex = 2
-        Label2.Text = "Username"
-        ' 
-        ' Label3
-        ' 
-        Label3.AutoSize = True
-        Label3.Font = New Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label3.Location = New Point(67, 199)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(87, 25)
-        Label3.TabIndex = 3
-        Label3.Text = "Password"
-        ' 
         ' TextBox2
         ' 
-        TextBox2.Location = New Point(67, 228)
+        TextBox2.BackColor = SystemColors.ControlDark
+        TextBox2.BorderStyle = BorderStyle.None
+        TextBox2.ForeColor = SystemColors.GrayText
+        TextBox2.Location = New Point(26, 21)
         TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(290, 27)
+        TextBox2.Size = New Size(290, 20)
         TextBox2.TabIndex = 4
+        TextBox2.Text = "Username"
         ' 
         ' Button1
         ' 
         Button1.BackColor = SystemColors.ActiveCaption
-        Button1.Location = New Point(67, 329)
+        Button1.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button1.Location = New Point(41, 340)
         Button1.Name = "Button1"
-        Button1.Size = New Size(290, 34)
+        Button1.Size = New Size(346, 48)
         Button1.TabIndex = 5
         Button1.Text = "Login"
         Button1.UseVisualStyleBackColor = False
@@ -94,27 +75,30 @@ Partial Class Login
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Location = New Point(67, 262)
+        Label4.Font = New Font("Arial Narrow", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label4.Location = New Point(41, 456)
         Label4.Name = "Label4"
-        Label4.Size = New Size(115, 20)
+        Label4.Size = New Size(110, 20)
         Label4.TabIndex = 6
         Label4.Text = "Lupa password?"
         ' 
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Location = New Point(67, 291)
+        Label5.Font = New Font("Arial Narrow", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label5.Location = New Point(108, 527)
         Label5.Name = "Label5"
-        Label5.Size = New Size(141, 20)
+        Label5.Size = New Size(133, 20)
         Label5.TabIndex = 7
         Label5.Text = "Belum punya akun? "
         ' 
         ' Button2
         ' 
         Button2.BackColor = Color.Red
-        Button2.Location = New Point(67, 369)
+        Button2.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button2.Location = New Point(41, 394)
         Button2.Name = "Button2"
-        Button2.Size = New Size(290, 32)
+        Button2.Size = New Size(346, 47)
         Button2.TabIndex = 8
         Button2.Text = "Batal"
         Button2.UseVisualStyleBackColor = False
@@ -122,9 +106,10 @@ Partial Class Login
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Location = New Point(200, 291)
+        Label6.Font = New Font("Arial Narrow", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label6.Location = New Point(236, 527)
         Label6.Name = "Label6"
-        Label6.Size = New Size(63, 20)
+        Label6.Size = New Size(60, 20)
         Label6.TabIndex = 9
         Label6.Text = "Register"
         ' 
@@ -144,36 +129,75 @@ Partial Class Login
         Panel1.Controls.Add(Label7)
         Panel1.Location = New Point(-2, 0)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(422, 106)
+        Panel1.Size = New Size(439, 106)
         Panel1.TabIndex = 11
         ' 
-        ' Form1
+        ' Panel2
+        ' 
+        Panel2.BackColor = SystemColors.ControlDark
+        Panel2.Controls.Add(TextBox2)
+        Panel2.Location = New Point(41, 174)
+        Panel2.Name = "Panel2"
+        Panel2.Size = New Size(346, 61)
+        Panel2.TabIndex = 12
+        ' 
+        ' Panel3
+        ' 
+        Panel3.BackColor = SystemColors.ControlDark
+        Panel3.Controls.Add(TextBox3)
+        Panel3.Location = New Point(41, 250)
+        Panel3.Name = "Panel3"
+        Panel3.Size = New Size(346, 61)
+        Panel3.TabIndex = 13
+        ' 
+        ' TextBox3
+        ' 
+        TextBox3.BackColor = SystemColors.ControlDark
+        TextBox3.BorderStyle = BorderStyle.None
+        TextBox3.ForeColor = SystemColors.GrayText
+        TextBox3.Location = New Point(26, 21)
+        TextBox3.Name = "TextBox3"
+        TextBox3.Size = New Size(290, 20)
+        TextBox3.TabIndex = 4
+        TextBox3.Text = "Password"
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Font = New Font("Arial Narrow", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.Location = New Point(327, 456)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(60, 20)
+        Label2.TabIndex = 14
+        Label2.Text = "Bantuan"
+        ' 
+        ' Login
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(420, 430)
+        ClientSize = New Size(435, 569)
+        Controls.Add(Label2)
+        Controls.Add(Panel3)
+        Controls.Add(Panel2)
         Controls.Add(Panel1)
         Controls.Add(Label6)
         Controls.Add(Button2)
         Controls.Add(Label5)
         Controls.Add(Label4)
         Controls.Add(Button1)
-        Controls.Add(TextBox2)
-        Controls.Add(Label3)
-        Controls.Add(Label2)
-        Controls.Add(TextBox1)
-        Name = "Form1"
+        Name = "Login"
         Text = "Login"
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
+        Panel2.ResumeLayout(False)
+        Panel2.PerformLayout()
+        Panel3.ResumeLayout(False)
+        Panel3.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Label4 As Label
@@ -182,5 +206,9 @@ Partial Class Login
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Panel1 As Panel
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents Label2 As Label
 
 End Class
