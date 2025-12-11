@@ -1,3 +1,3 @@
-﻿Public Class FormKonsulTMJ1
+﻿Public Class FormKonsulTMJ
 
 End Class

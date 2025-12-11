@@ -728,7 +728,6 @@ Partial Class DashboardNew
         Controls.Add(Label4)
         Controls.Add(Panel1)
         Font = New Font("Century Gothic", 12.0F, FontStyle.Bold)
-        FormBorderStyle = FormBorderStyle.None
         Margin = New Padding(4)
         Name = "DashboardNew"
         Text = "DashboardNew"

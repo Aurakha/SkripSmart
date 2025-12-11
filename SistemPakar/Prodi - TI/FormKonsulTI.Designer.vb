@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class FormKonsulTMJ
+Partial Class FormKonsulTI
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -23,18 +23,8 @@ Partial Class FormKonsulTMJ
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormKonsulTMJ))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormKonsulTI))
         Timer1 = New Timer(components)
-        Panel2 = New Panel()
-        Label7 = New Label()
-        Button4 = New Button()
-        Sidebar = New Panel()
-        PictureBox2 = New PictureBox()
-        PictureBox1 = New PictureBox()
-        Label4 = New Label()
-        Label3 = New Label()
-        Label2 = New Label()
-        ProgressBar1 = New ProgressBar()
         Panel5 = New Panel()
         PictureBox5 = New PictureBox()
         Label11 = New Label()
@@ -42,7 +32,6 @@ Partial Class FormKonsulTMJ
         Label5 = New Label()
         PictureBox3 = New PictureBox()
         Label1 = New Label()
-        Label8 = New Label()
         PanelQuestion = New Panel()
         Label6 = New Label()
         GroupBox1 = New GroupBox()
@@ -53,17 +42,222 @@ Partial Class FormKonsulTMJ
         RadioButton1 = New RadioButton()
         Button2 = New Button()
         Button1 = New Button()
-        Panel2.SuspendLayout()
-        Sidebar.SuspendLayout()
-        CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        Panel2 = New Panel()
+        Label7 = New Label()
+        Button4 = New Button()
+        Sidebar = New Panel()
+        PictureBox2 = New PictureBox()
+        PictureBox1 = New PictureBox()
+        Label4 = New Label()
+        Label3 = New Label()
+        Label2 = New Label()
+        ProgressBar1 = New ProgressBar()
+        Label8 = New Label()
         Panel5.SuspendLayout()
         CType(PictureBox5, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox4, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         PanelQuestion.SuspendLayout()
         GroupBox1.SuspendLayout()
+        Panel2.SuspendLayout()
+        Sidebar.SuspendLayout()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
+        ' 
+        ' Panel5
+        ' 
+        Panel5.BackColor = Color.White
+        Panel5.Controls.Add(PictureBox5)
+        Panel5.Controls.Add(Label11)
+        Panel5.Controls.Add(PictureBox4)
+        Panel5.Controls.Add(Label5)
+        Panel5.Controls.Add(PictureBox3)
+        Panel5.Controls.Add(Label1)
+        Panel5.Location = New Point(246, 0)
+        Panel5.Margin = New Padding(4)
+        Panel5.Name = "Panel5"
+        Panel5.Size = New Size(667, 48)
+        Panel5.TabIndex = 38
+        ' 
+        ' PictureBox5
+        ' 
+        PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), Image)
+        PictureBox5.Location = New Point(496, 11)
+        PictureBox5.Margin = New Padding(4)
+        PictureBox5.Name = "PictureBox5"
+        PictureBox5.Size = New Size(36, 28)
+        PictureBox5.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox5.TabIndex = 22
+        PictureBox5.TabStop = False
+        ' 
+        ' Label11
+        ' 
+        Label11.AutoSize = True
+        Label11.Font = New Font("Century Gothic", 9F, FontStyle.Bold)
+        Label11.Location = New Point(540, 15)
+        Label11.Margin = New Padding(4, 0, 4, 0)
+        Label11.Name = "Label11"
+        Label11.Size = New Size(84, 18)
+        Label11.TabIndex = 20
+        Label11.Text = "Label Jam"
+        ' 
+        ' PictureBox4
+        ' 
+        PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), Image)
+        PictureBox4.Location = New Point(1809, 4)
+        PictureBox4.Margin = New Padding(4)
+        PictureBox4.Name = "PictureBox4"
+        PictureBox4.Size = New Size(42, 42)
+        PictureBox4.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox4.TabIndex = 4
+        PictureBox4.TabStop = False
+        ' 
+        ' Label5
+        ' 
+        Label5.AutoSize = True
+        Label5.Font = New Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label5.Location = New Point(1860, 14)
+        Label5.Margin = New Padding(4, 0, 4, 0)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(84, 18)
+        Label5.TabIndex = 3
+        Label5.Text = "Label Jam"
+        ' 
+        ' PictureBox3
+        ' 
+        PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), Image)
+        PictureBox3.Location = New Point(29, 11)
+        PictureBox3.Margin = New Padding(4)
+        PictureBox3.Name = "PictureBox3"
+        PictureBox3.Size = New Size(32, 28)
+        PictureBox3.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox3.TabIndex = 0
+        PictureBox3.TabStop = False
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Font = New Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.Location = New Point(69, 15)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(81, 18)
+        Label1.TabIndex = 0
+        Label1.Text = "Halo, User"
+        ' 
+        ' PanelQuestion
+        ' 
+        PanelQuestion.BackColor = Color.FromArgb(CByte(113), CByte(50), CByte(202))
+        PanelQuestion.Controls.Add(Label6)
+        PanelQuestion.Location = New Point(296, 106)
+        PanelQuestion.Name = "PanelQuestion"
+        PanelQuestion.Size = New Size(574, 67)
+        PanelQuestion.TabIndex = 39
+        ' 
+        ' Label6
+        ' 
+        Label6.AutoSize = True
+        Label6.Font = New Font("Century Gothic", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label6.ForeColor = Color.White
+        Label6.Location = New Point(189, 25)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(179, 19)
+        Label6.TabIndex = 0
+        Label6.Text = "Pertanyaannya disini"
+        Label6.TextAlign = ContentAlignment.TopCenter
+        ' 
+        ' GroupBox1
+        ' 
+        GroupBox1.BackColor = Color.White
+        GroupBox1.Controls.Add(RadioButton5)
+        GroupBox1.Controls.Add(RadioButton4)
+        GroupBox1.Controls.Add(RadioButton3)
+        GroupBox1.Controls.Add(RadioButton2)
+        GroupBox1.Controls.Add(RadioButton1)
+        GroupBox1.Font = New Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        GroupBox1.ForeColor = Color.Black
+        GroupBox1.Location = New Point(296, 182)
+        GroupBox1.Name = "GroupBox1"
+        GroupBox1.Size = New Size(574, 255)
+        GroupBox1.TabIndex = 40
+        GroupBox1.TabStop = False
+        GroupBox1.Text = "Silahkan pilih salah satu jawaban"
+        ' 
+        ' RadioButton5
+        ' 
+        RadioButton5.AutoSize = True
+        RadioButton5.Location = New Point(52, 209)
+        RadioButton5.Name = "RadioButton5"
+        RadioButton5.Size = New Size(159, 22)
+        RadioButton5.TabIndex = 4
+        RadioButton5.TabStop = True
+        RadioButton5.Text = "5 - Sangat Tertarik"
+        RadioButton5.UseVisualStyleBackColor = True
+        ' 
+        ' RadioButton4
+        ' 
+        RadioButton4.AutoSize = True
+        RadioButton4.Location = New Point(51, 167)
+        RadioButton4.Name = "RadioButton4"
+        RadioButton4.Size = New Size(104, 22)
+        RadioButton4.TabIndex = 3
+        RadioButton4.TabStop = True
+        RadioButton4.Text = "4 - Tertarik"
+        RadioButton4.UseVisualStyleBackColor = True
+        ' 
+        ' RadioButton3
+        ' 
+        RadioButton3.AutoSize = True
+        RadioButton3.Location = New Point(51, 125)
+        RadioButton3.Name = "RadioButton3"
+        RadioButton3.Size = New Size(157, 22)
+        RadioButton3.TabIndex = 2
+        RadioButton3.TabStop = True
+        RadioButton3.Text = "3 - Cukup Tertarik"
+        RadioButton3.UseVisualStyleBackColor = True
+        ' 
+        ' RadioButton2
+        ' 
+        RadioButton2.AutoSize = True
+        RadioButton2.Location = New Point(52, 84)
+        RadioButton2.Name = "RadioButton2"
+        RadioButton2.Size = New Size(157, 22)
+        RadioButton2.TabIndex = 1
+        RadioButton2.TabStop = True
+        RadioButton2.Text = "2 - Sedikit Tertarik"
+        RadioButton2.UseVisualStyleBackColor = True
+        ' 
+        ' RadioButton1
+        ' 
+        RadioButton1.AutoSize = True
+        RadioButton1.ForeColor = Color.Black
+        RadioButton1.Location = New Point(52, 44)
+        RadioButton1.Name = "RadioButton1"
+        RadioButton1.Size = New Size(128, 22)
+        RadioButton1.TabIndex = 0
+        RadioButton1.TabStop = True
+        RadioButton1.Text = "1 - Tidak Tahu"
+        RadioButton1.UseVisualStyleBackColor = True
+        ' 
+        ' Button2
+        ' 
+        Button2.Font = New Font("Century Gothic", 9F, FontStyle.Bold)
+        Button2.Location = New Point(296, 469)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(206, 35)
+        Button2.TabIndex = 41
+        Button2.Text = "← Sebelumnya"
+        Button2.UseVisualStyleBackColor = True
+        ' 
+        ' Button1
+        ' 
+        Button1.Font = New Font("Century Gothic", 9F, FontStyle.Bold)
+        Button1.Location = New Point(675, 469)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(195, 35)
+        Button1.TabIndex = 42
+        Button1.Text = "Selanjutnya →"
+        Button1.UseVisualStyleBackColor = True
         ' 
         ' Panel2
         ' 
@@ -79,7 +273,7 @@ Partial Class FormKonsulTMJ
         Panel2.Location = New Point(3, 0)
         Panel2.Name = "Panel2"
         Panel2.Size = New Size(248, 546)
-        Panel2.TabIndex = 3
+        Panel2.TabIndex = 43
         ' 
         ' Label7
         ' 
@@ -182,230 +376,31 @@ Partial Class FormKonsulTMJ
         ProgressBar1.Size = New Size(222, 26)
         ProgressBar1.TabIndex = 1
         ' 
-        ' Panel5
-        ' 
-        Panel5.BackColor = Color.White
-        Panel5.Controls.Add(PictureBox5)
-        Panel5.Controls.Add(Label11)
-        Panel5.Controls.Add(PictureBox4)
-        Panel5.Controls.Add(Label5)
-        Panel5.Controls.Add(PictureBox3)
-        Panel5.Controls.Add(Label1)
-        Panel5.Location = New Point(248, 0)
-        Panel5.Margin = New Padding(4)
-        Panel5.Name = "Panel5"
-        Panel5.Size = New Size(669, 49)
-        Panel5.TabIndex = 39
-        ' 
-        ' PictureBox5
-        ' 
-        PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), Image)
-        PictureBox5.Location = New Point(478, 11)
-        PictureBox5.Margin = New Padding(4)
-        PictureBox5.Name = "PictureBox5"
-        PictureBox5.Size = New Size(36, 28)
-        PictureBox5.SizeMode = PictureBoxSizeMode.Zoom
-        PictureBox5.TabIndex = 22
-        PictureBox5.TabStop = False
-        ' 
-        ' Label11
-        ' 
-        Label11.AutoSize = True
-        Label11.Font = New Font("Century Gothic", 9F, FontStyle.Bold)
-        Label11.Location = New Point(523, 15)
-        Label11.Margin = New Padding(4, 0, 4, 0)
-        Label11.Name = "Label11"
-        Label11.Size = New Size(84, 18)
-        Label11.TabIndex = 20
-        Label11.Text = "Label Jam"
-        ' 
-        ' PictureBox4
-        ' 
-        PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), Image)
-        PictureBox4.Location = New Point(1809, 4)
-        PictureBox4.Margin = New Padding(4)
-        PictureBox4.Name = "PictureBox4"
-        PictureBox4.Size = New Size(42, 42)
-        PictureBox4.SizeMode = PictureBoxSizeMode.Zoom
-        PictureBox4.TabIndex = 4
-        PictureBox4.TabStop = False
-        ' 
-        ' Label5
-        ' 
-        Label5.AutoSize = True
-        Label5.Font = New Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label5.Location = New Point(1860, 14)
-        Label5.Margin = New Padding(4, 0, 4, 0)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(84, 18)
-        Label5.TabIndex = 3
-        Label5.Text = "Label Jam"
-        ' 
-        ' PictureBox3
-        ' 
-        PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), Image)
-        PictureBox3.Location = New Point(29, 11)
-        PictureBox3.Margin = New Padding(4)
-        PictureBox3.Name = "PictureBox3"
-        PictureBox3.Size = New Size(32, 28)
-        PictureBox3.SizeMode = PictureBoxSizeMode.Zoom
-        PictureBox3.TabIndex = 0
-        PictureBox3.TabStop = False
-        ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.Font = New Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(69, 15)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(81, 18)
-        Label1.TabIndex = 0
-        Label1.Text = "Halo, User"
-        ' 
         ' Label8
         ' 
         Label8.AutoSize = True
         Label8.Font = New Font("Century Gothic", 9F, FontStyle.Bold)
-        Label8.Location = New Point(304, 74)
+        Label8.Location = New Point(296, 70)
         Label8.Margin = New Padding(4, 0, 4, 0)
         Label8.Name = "Label8"
-        Label8.Size = New Size(255, 18)
-        Label8.TabIndex = 41
-        Label8.Text = "Prodi: Teknik Multimedia Jaringan"
+        Label8.Size = New Size(187, 18)
+        Label8.TabIndex = 23
+        Label8.Text = "Prodi: Teknik Informatika"
         ' 
-        ' PanelQuestion
-        ' 
-        PanelQuestion.BackColor = Color.FromArgb(CByte(113), CByte(50), CByte(202))
-        PanelQuestion.Controls.Add(Label6)
-        PanelQuestion.Location = New Point(304, 106)
-        PanelQuestion.Name = "PanelQuestion"
-        PanelQuestion.Size = New Size(574, 67)
-        PanelQuestion.TabIndex = 42
-        ' 
-        ' Label6
-        ' 
-        Label6.AutoSize = True
-        Label6.Font = New Font("Century Gothic", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label6.ForeColor = Color.White
-        Label6.Location = New Point(189, 25)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(179, 19)
-        Label6.TabIndex = 0
-        Label6.Text = "Pertanyaannya disini"
-        Label6.TextAlign = ContentAlignment.TopCenter
-        ' 
-        ' GroupBox1
-        ' 
-        GroupBox1.BackColor = Color.White
-        GroupBox1.Controls.Add(RadioButton5)
-        GroupBox1.Controls.Add(RadioButton4)
-        GroupBox1.Controls.Add(RadioButton3)
-        GroupBox1.Controls.Add(RadioButton2)
-        GroupBox1.Controls.Add(RadioButton1)
-        GroupBox1.Font = New Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        GroupBox1.ForeColor = Color.Black
-        GroupBox1.Location = New Point(304, 182)
-        GroupBox1.Name = "GroupBox1"
-        GroupBox1.Size = New Size(574, 255)
-        GroupBox1.TabIndex = 43
-        GroupBox1.TabStop = False
-        GroupBox1.Text = "Silahkan pilih salah satu jawaban"
-        ' 
-        ' RadioButton5
-        ' 
-        RadioButton5.AutoSize = True
-        RadioButton5.Location = New Point(52, 209)
-        RadioButton5.Name = "RadioButton5"
-        RadioButton5.Size = New Size(159, 22)
-        RadioButton5.TabIndex = 4
-        RadioButton5.TabStop = True
-        RadioButton5.Text = "5 - Sangat Tertarik"
-        RadioButton5.UseVisualStyleBackColor = True
-        ' 
-        ' RadioButton4
-        ' 
-        RadioButton4.AutoSize = True
-        RadioButton4.Location = New Point(51, 167)
-        RadioButton4.Name = "RadioButton4"
-        RadioButton4.Size = New Size(104, 22)
-        RadioButton4.TabIndex = 3
-        RadioButton4.TabStop = True
-        RadioButton4.Text = "4 - Tertarik"
-        RadioButton4.UseVisualStyleBackColor = True
-        ' 
-        ' RadioButton3
-        ' 
-        RadioButton3.AutoSize = True
-        RadioButton3.Location = New Point(51, 125)
-        RadioButton3.Name = "RadioButton3"
-        RadioButton3.Size = New Size(157, 22)
-        RadioButton3.TabIndex = 2
-        RadioButton3.TabStop = True
-        RadioButton3.Text = "3 - Cukup Tertarik"
-        RadioButton3.UseVisualStyleBackColor = True
-        ' 
-        ' RadioButton2
-        ' 
-        RadioButton2.AutoSize = True
-        RadioButton2.Location = New Point(52, 84)
-        RadioButton2.Name = "RadioButton2"
-        RadioButton2.Size = New Size(157, 22)
-        RadioButton2.TabIndex = 1
-        RadioButton2.TabStop = True
-        RadioButton2.Text = "2 - Sedikit Tertarik"
-        RadioButton2.UseVisualStyleBackColor = True
-        ' 
-        ' RadioButton1
-        ' 
-        RadioButton1.AutoSize = True
-        RadioButton1.ForeColor = Color.Black
-        RadioButton1.Location = New Point(52, 44)
-        RadioButton1.Name = "RadioButton1"
-        RadioButton1.Size = New Size(128, 22)
-        RadioButton1.TabIndex = 0
-        RadioButton1.TabStop = True
-        RadioButton1.Text = "1 - Tidak Tahu"
-        RadioButton1.UseVisualStyleBackColor = True
-        ' 
-        ' Button2
-        ' 
-        Button2.Font = New Font("Century Gothic", 9F, FontStyle.Bold)
-        Button2.Location = New Point(304, 460)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(206, 35)
-        Button2.TabIndex = 44
-        Button2.Text = "← Sebelumnya"
-        Button2.UseVisualStyleBackColor = True
-        ' 
-        ' Button1
-        ' 
-        Button1.Font = New Font("Century Gothic", 9F, FontStyle.Bold)
-        Button1.Location = New Point(683, 460)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(195, 35)
-        Button1.TabIndex = 45
-        Button1.Text = "Selanjutnya →"
-        Button1.UseVisualStyleBackColor = True
-        ' 
-        ' FormKonsulTMJ
+        ' FormKonsulTI1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(912, 545)
+        Controls.Add(Label8)
+        Controls.Add(Panel2)
         Controls.Add(Button1)
         Controls.Add(Button2)
         Controls.Add(GroupBox1)
         Controls.Add(PanelQuestion)
-        Controls.Add(Label8)
         Controls.Add(Panel5)
-        Controls.Add(Panel2)
-        Name = "FormKonsulTMJ"
-        Text = "FormKonsulTMJ1"
-        Panel2.ResumeLayout(False)
-        Panel2.PerformLayout()
-        Sidebar.ResumeLayout(False)
-        CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
+        Name = "FormKonsulTI1"
+        Text = "Konsultasi Level 2 "
         Panel5.ResumeLayout(False)
         Panel5.PerformLayout()
         CType(PictureBox5, ComponentModel.ISupportInitialize).EndInit()
@@ -415,20 +410,15 @@ Partial Class FormKonsulTMJ
         PanelQuestion.PerformLayout()
         GroupBox1.ResumeLayout(False)
         GroupBox1.PerformLayout()
+        Panel2.ResumeLayout(False)
+        Panel2.PerformLayout()
+        Sidebar.ResumeLayout(False)
+        CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
     Friend WithEvents Timer1 As Timer
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Sidebar As Panel
-    Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents ProgressBar1 As ProgressBar
     Friend WithEvents Panel5 As Panel
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents Label11 As Label
@@ -436,7 +426,6 @@ Partial Class FormKonsulTMJ
     Friend WithEvents Label5 As Label
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents Label8 As Label
     Friend WithEvents PanelQuestion As Panel
     Friend WithEvents Label6 As Label
     Friend WithEvents GroupBox1 As GroupBox
@@ -447,4 +436,15 @@ Partial Class FormKonsulTMJ
     Friend WithEvents RadioButton1 As RadioButton
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Sidebar As Panel
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents ProgressBar1 As ProgressBar
+    Friend WithEvents Label8 As Label
 End Class

@@ -279,20 +279,20 @@ Public Class Konsultasi
         Return 0
     End Function
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs)
         Try
-            Dim val As Integer = GetSelectedValue()
+            Dim val = GetSelectedValue
             If val = 0 Then
                 MessageBox.Show("Pilih salah satu jawaban terlebih dahulu.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
                 Return
             End If
 
             ' 1. Simpan Jawaban
-            Dim q As Question = questions(currentIndex)
-            Dim varKey As String = If(String.IsNullOrWhiteSpace(q.Variabel), "A", q.Variabel.ToUpper())
+            Dim q = questions(currentIndex)
+            Dim varKey = If(String.IsNullOrWhiteSpace(q.Variabel), "A", q.Variabel.ToUpper)
 
             If Not answersByVar.ContainsKey(varKey) Then
-                answersByVar(varKey) = New List(Of Integer)()
+                answersByVar(varKey) = New List(Of Integer)
             End If
             answersByVar(varKey).Add(val)
 
@@ -306,10 +306,10 @@ Public Class Konsultasi
                 ' === SELESAI & HITUNG HASIL ===
 
                 ' Hitung Rata-rata Skor (1-5)
-                Dim avgA As Double = If(answersByVar("A").Count > 0, answersByVar("A").Average(), 1.0)
-                Dim avgC As Double = If(answersByVar("C").Count > 0, answersByVar("C").Average(), 1.0)
-                Dim avgK As Double = If(answersByVar("K").Count > 0, answersByVar("K").Average(), 1.0)
-                Dim avgH As Double = If(answersByVar("H").Count > 0, answersByVar("H").Average(), 1.0)
+                Dim avgA = If(answersByVar("A").Count > 0, answersByVar("A").Average, 1.0)
+                Dim avgC = If(answersByVar("C").Count > 0, answersByVar("C").Average, 1.0)
+                Dim avgK = If(answersByVar("K").Count > 0, answersByVar("K").Average, 1.0)
+                Dim avgH = If(answersByVar("H").Count > 0, answersByVar("H").Average, 1.0)
 
                 ' Hitung CF (0-1)
                 Dim cfA = HitungCF(avgA)
@@ -321,21 +321,21 @@ Public Class Konsultasi
                 Dim hasil = AnalisisLevel1_ByRules(avgA, avgC, avgK, avgH)
 
                 ' Buat Detail Perhitungan (Untuk ditampilkan di Form Hasil)
-                Dim detail As String = "Rincian Skor:" & vbCrLf &
+                Dim detail = "Rincian Skor:" & vbCrLf &
                                       $"Analytics (A): {avgA:0.0} (CF: {cfA:0.00})" & vbCrLf &
                                       $"Coding (C): {avgC:0.0} (CF: {cfC:0.00})" & vbCrLf &
                                       $"Creativity (K): {avgK:0.0} (CF: {cfK:0.00})" & vbCrLf &
                                       $"Hardware (H): {avgH:0.0} (CF: {cfH:0.00})" & vbCrLf & vbCrLf
 
-                Dim pesanLengkap As String = hasil.Pesan & vbCrLf & vbCrLf & detail
+                Dim pesanLengkap = hasil.Pesan & vbCrLf & vbCrLf & detail
 
                 ' === INTEGRASI KE FORM HASIL BARU ===
                 ' Membuka FormHasilLvl1 dengan parameter hasil hitungan
                 Dim frmHasil As New FormHasilLvl1(pesanLengkap, hasil.Kode, hasil.Nama, hasil.NilaiCF)
-                frmHasil.Show()
+                frmHasil.Show
 
                 ' Sembunyikan form soal ini
-                Me.Hide()
+                Hide
             End If
 
         Catch ex As Exception

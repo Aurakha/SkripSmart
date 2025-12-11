@@ -272,7 +272,6 @@ Partial Class LoginNew
         ClientSize = New Size(1260, 616)
         Controls.Add(Panel1)
         Font = New Font("Century Gothic", 7.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        FormBorderStyle = FormBorderStyle.None
         Location = New Point(263, -1)
         Name = "LoginNew"
         Text = "LoginNew"

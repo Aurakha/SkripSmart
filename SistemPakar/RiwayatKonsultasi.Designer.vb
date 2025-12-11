@@ -24,15 +24,17 @@ Partial Class RiwayatKonsultasi
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(RiwayatKonsultasi))
         GroupBox1 = New GroupBox()
-        Label2 = New Label()
-        Label3 = New Label()
-        Label4 = New Label()
-        Label6 = New Label()
-        Label7 = New Label()
-        Label8 = New Label()
-        Label9 = New Label()
+        Button8 = New Button()
         Button1 = New Button()
+        Label9 = New Label()
+        Label8 = New Label()
+        Label7 = New Label()
+        Label6 = New Label()
+        Label4 = New Label()
+        Label3 = New Label()
+        Label2 = New Label()
         GroupBox2 = New GroupBox()
+        Button9 = New Button()
         Button2 = New Button()
         Label10 = New Label()
         Label12 = New Label()
@@ -61,8 +63,6 @@ Partial Class RiwayatKonsultasi
         Label11 = New Label()
         PictureBox5 = New PictureBox()
         Panel5 = New Panel()
-        Button8 = New Button()
-        Button9 = New Button()
         PrintDocument1 = New Printing.PrintDocument()
         GroupBox1.SuspendLayout()
         GroupBox2.SuspendLayout()
@@ -98,63 +98,25 @@ Partial Class RiwayatKonsultasi
         GroupBox1.TabStop = False
         GroupBox1.Text = "Konsultasi"
         ' 
-        ' Label2
+        ' Button8
         ' 
-        Label2.AutoSize = True
-        Label2.Location = New Point(86, 0)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(45, 18)
-        Label2.TabIndex = 0
-        Label2.Text = "#12   "
+        Button8.FlatStyle = FlatStyle.Flat
+        Button8.Location = New Point(244, 89)
+        Button8.Name = "Button8"
+        Button8.Size = New Size(94, 27)
+        Button8.TabIndex = 8
+        Button8.Text = "Cetak"
+        Button8.UseVisualStyleBackColor = True
         ' 
-        ' Label3
+        ' Button1
         ' 
-        Label3.AutoSize = True
-        Label3.ForeColor = Color.White
-        Label3.Location = New Point(120, 0)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(90, 18)
-        Label3.TabIndex = 1
-        Label3.Text = "02/12/2025 "
-        ' 
-        ' Label4
-        ' 
-        Label4.AutoSize = True
-        Label4.Location = New Point(202, 0)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(60, 18)
-        Label4.TabIndex = 2
-        Label4.Text = "13:45    "
-        ' 
-        ' Label6
-        ' 
-        Label6.AutoSize = True
-        Label6.ForeColor = Color.White
-        Label6.Location = New Point(6, 33)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(156, 18)
-        Label6.TabIndex = 3
-        Label6.Text = "Topik Rekomendasi:"
-        ' 
-        ' Label7
-        ' 
-        Label7.AutoSize = True
-        Label7.ForeColor = Color.White
-        Label7.Location = New Point(6, 63)
-        Label7.Name = "Label7"
-        Label7.Size = New Size(116, 18)
-        Label7.TabIndex = 4
-        Label7.Text = "Nilai Dominan:"
-        ' 
-        ' Label8
-        ' 
-        Label8.AutoSize = True
-        Label8.ForeColor = Color.White
-        Label8.Location = New Point(159, 33)
-        Label8.Name = "Label8"
-        Label8.Size = New Size(142, 18)
-        Label8.TabIndex = 5
-        Label8.Text = "Machine Learning"
+        Button1.FlatStyle = FlatStyle.Flat
+        Button1.Location = New Point(344, 89)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(94, 27)
+        Button1.TabIndex = 7
+        Button1.Text = "Hapus"
+        Button1.UseVisualStyleBackColor = True
         ' 
         ' Label9
         ' 
@@ -166,15 +128,63 @@ Partial Class RiwayatKonsultasi
         Label9.TabIndex = 6
         Label9.Text = "Data Science (87%)"
         ' 
-        ' Button1
+        ' Label8
         ' 
-        Button1.FlatStyle = FlatStyle.Flat
-        Button1.Location = New Point(344, 89)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(94, 27)
-        Button1.TabIndex = 7
-        Button1.Text = "Hapus"
-        Button1.UseVisualStyleBackColor = True
+        Label8.AutoSize = True
+        Label8.ForeColor = Color.White
+        Label8.Location = New Point(159, 33)
+        Label8.Name = "Label8"
+        Label8.Size = New Size(142, 18)
+        Label8.TabIndex = 5
+        Label8.Text = "Machine Learning"
+        ' 
+        ' Label7
+        ' 
+        Label7.AutoSize = True
+        Label7.ForeColor = Color.White
+        Label7.Location = New Point(6, 63)
+        Label7.Name = "Label7"
+        Label7.Size = New Size(116, 18)
+        Label7.TabIndex = 4
+        Label7.Text = "Nilai Dominan:"
+        ' 
+        ' Label6
+        ' 
+        Label6.AutoSize = True
+        Label6.ForeColor = Color.White
+        Label6.Location = New Point(6, 33)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(156, 18)
+        Label6.TabIndex = 3
+        Label6.Text = "Topik Rekomendasi:"
+        ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.Location = New Point(202, 0)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(60, 18)
+        Label4.TabIndex = 2
+        Label4.Text = "13:45    "
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.ForeColor = Color.White
+        Label3.Location = New Point(120, 0)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(90, 18)
+        Label3.TabIndex = 1
+        Label3.Text = "02/12/2025 "
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Location = New Point(86, 0)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(45, 18)
+        Label2.TabIndex = 0
+        Label2.Text = "#12   "
         ' 
         ' GroupBox2
         ' 
@@ -196,6 +206,16 @@ Partial Class RiwayatKonsultasi
         GroupBox2.TabIndex = 40
         GroupBox2.TabStop = False
         GroupBox2.Text = "Konsultasi"
+        ' 
+        ' Button9
+        ' 
+        Button9.FlatStyle = FlatStyle.Flat
+        Button9.Location = New Point(244, 89)
+        Button9.Name = "Button9"
+        Button9.Size = New Size(94, 27)
+        Button9.TabIndex = 8
+        Button9.Text = "Cetak"
+        Button9.UseVisualStyleBackColor = True
         ' 
         ' Button2
         ' 
@@ -423,7 +443,7 @@ Partial Class RiwayatKonsultasi
         ' Button7
         ' 
         Button7.Font = New Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button7.Location = New Point(842, 474)
+        Button7.Location = New Point(822, 477)
         Button7.Name = "Button7"
         Button7.Size = New Size(149, 35)
         Button7.TabIndex = 42
@@ -522,31 +542,11 @@ Partial Class RiwayatKonsultasi
         Panel5.Size = New Size(737, 49)
         Panel5.TabIndex = 38
         ' 
-        ' Button8
-        ' 
-        Button8.FlatStyle = FlatStyle.Flat
-        Button8.Location = New Point(244, 89)
-        Button8.Name = "Button8"
-        Button8.Size = New Size(94, 27)
-        Button8.TabIndex = 8
-        Button8.Text = "Cetak"
-        Button8.UseVisualStyleBackColor = True
-        ' 
-        ' Button9
-        ' 
-        Button9.FlatStyle = FlatStyle.Flat
-        Button9.Location = New Point(244, 89)
-        Button9.Name = "Button9"
-        Button9.Size = New Size(94, 27)
-        Button9.TabIndex = 8
-        Button9.Text = "Cetak"
-        Button9.UseVisualStyleBackColor = True
-        ' 
         ' RiwayatKonsultasi
         ' 
         AutoScaleDimensions = New SizeF(9F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1027, 548)
+        ClientSize = New Size(1010, 548)
         Controls.Add(Label18)
         Controls.Add(Button7)
         Controls.Add(Panel1)

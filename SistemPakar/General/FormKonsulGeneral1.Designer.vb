@@ -25,12 +25,16 @@ Partial Class Konsultasi
         components = New ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Konsultasi))
         Panel2 = New Panel()
+        Label7 = New Label()
+        Button4 = New Button()
+        Sidebar = New Panel()
+        PictureBox2 = New PictureBox()
+        PictureBox1 = New PictureBox()
         Label4 = New Label()
         Label3 = New Label()
         Label2 = New Label()
         ProgressBar1 = New ProgressBar()
         Label1 = New Label()
-        Button3 = New Button()
         PanelQuestion = New Panel()
         Label6 = New Label()
         RadioButton4 = New RadioButton()
@@ -47,21 +51,17 @@ Partial Class Konsultasi
         PictureBox4 = New PictureBox()
         Label5 = New Label()
         PictureBox3 = New PictureBox()
-        Sidebar = New Panel()
-        PictureBox2 = New PictureBox()
-        PictureBox1 = New PictureBox()
-        Button4 = New Button()
-        Label7 = New Label()
+        Button3 = New Button()
         Panel2.SuspendLayout()
+        Sidebar.SuspendLayout()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         PanelQuestion.SuspendLayout()
         GroupBox1.SuspendLayout()
         Panel5.SuspendLayout()
         CType(PictureBox5, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox4, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
-        Sidebar.SuspendLayout()
-        CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Panel2
@@ -79,6 +79,67 @@ Partial Class Konsultasi
         Panel2.Name = "Panel2"
         Panel2.Size = New Size(248, 546)
         Panel2.TabIndex = 1
+        ' 
+        ' Label7
+        ' 
+        Label7.AutoSize = True
+        Label7.Font = New Font("Century Gothic", 9F, FontStyle.Bold)
+        Label7.ForeColor = Color.White
+        Label7.Location = New Point(16, 125)
+        Label7.Name = "Label7"
+        Label7.Size = New Size(129, 18)
+        Label7.TabIndex = 10
+        Label7.Text = "Kategori: Level 1"
+        ' 
+        ' Button4
+        ' 
+        Button4.Dock = DockStyle.Bottom
+        Button4.FlatAppearance.BorderSize = 0
+        Button4.FlatStyle = FlatStyle.Flat
+        Button4.Font = New Font("Century Gothic", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button4.ForeColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        Button4.Image = CType(resources.GetObject("Button4.Image"), Image)
+        Button4.ImageAlign = ContentAlignment.MiddleLeft
+        Button4.Location = New Point(0, 504)
+        Button4.Margin = New Padding(4)
+        Button4.Name = "Button4"
+        Button4.Size = New Size(248, 42)
+        Button4.TabIndex = 9
+        Button4.Text = "Keluar"
+        Button4.UseVisualStyleBackColor = True
+        ' 
+        ' Sidebar
+        ' 
+        Sidebar.Controls.Add(PictureBox2)
+        Sidebar.Controls.Add(PictureBox1)
+        Sidebar.Dock = DockStyle.Top
+        Sidebar.Location = New Point(0, 0)
+        Sidebar.Margin = New Padding(4)
+        Sidebar.Name = "Sidebar"
+        Sidebar.Size = New Size(248, 103)
+        Sidebar.TabIndex = 6
+        ' 
+        ' PictureBox2
+        ' 
+        PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
+        PictureBox2.Location = New Point(104, 28)
+        PictureBox2.Margin = New Padding(4)
+        PictureBox2.Name = "PictureBox2"
+        PictureBox2.Size = New Size(133, 33)
+        PictureBox2.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox2.TabIndex = 3
+        PictureBox2.TabStop = False
+        ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
+        PictureBox1.Location = New Point(16, 13)
+        PictureBox1.Margin = New Padding(4)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(89, 64)
+        PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox1.TabIndex = 2
+        PictureBox1.TabStop = False
         ' 
         ' Label4
         ' 
@@ -130,21 +191,11 @@ Partial Class Konsultasi
         Label1.TabIndex = 0
         Label1.Text = "Halo, User"
         ' 
-        ' Button3
-        ' 
-        Button3.Font = New Font("Century Gothic", 9F, FontStyle.Bold)
-        Button3.Location = New Point(665, 464)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(195, 35)
-        Button3.TabIndex = 7
-        Button3.Text = "Selanjutnya →"
-        Button3.UseVisualStyleBackColor = True
-        ' 
         ' PanelQuestion
         ' 
         PanelQuestion.BackColor = Color.FromArgb(CByte(113), CByte(50), CByte(202))
         PanelQuestion.Controls.Add(Label6)
-        PanelQuestion.Location = New Point(286, 84)
+        PanelQuestion.Location = New Point(286, 77)
         PanelQuestion.Name = "PanelQuestion"
         PanelQuestion.Size = New Size(574, 67)
         PanelQuestion.TabIndex = 9
@@ -216,7 +267,7 @@ Partial Class Konsultasi
         GroupBox1.Controls.Add(RadioButton1)
         GroupBox1.Font = New Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         GroupBox1.ForeColor = Color.Black
-        GroupBox1.Location = New Point(286, 173)
+        GroupBox1.Location = New Point(286, 183)
         GroupBox1.Name = "GroupBox1"
         GroupBox1.Size = New Size(574, 255)
         GroupBox1.TabIndex = 16
@@ -253,10 +304,10 @@ Partial Class Konsultasi
         Panel5.Controls.Add(Label5)
         Panel5.Controls.Add(PictureBox3)
         Panel5.Controls.Add(Label1)
-        Panel5.Location = New Point(256, 1)
+        Panel5.Location = New Point(246, 1)
         Panel5.Margin = New Padding(4)
         Panel5.Name = "Panel5"
-        Panel5.Size = New Size(655, 49)
+        Panel5.Size = New Size(669, 49)
         Panel5.TabIndex = 37
         ' 
         ' PictureBox5
@@ -314,66 +365,15 @@ Partial Class Konsultasi
         PictureBox3.TabIndex = 0
         PictureBox3.TabStop = False
         ' 
-        ' Sidebar
+        ' Button3
         ' 
-        Sidebar.Controls.Add(PictureBox2)
-        Sidebar.Controls.Add(PictureBox1)
-        Sidebar.Dock = DockStyle.Top
-        Sidebar.Location = New Point(0, 0)
-        Sidebar.Margin = New Padding(4)
-        Sidebar.Name = "Sidebar"
-        Sidebar.Size = New Size(248, 103)
-        Sidebar.TabIndex = 6
-        ' 
-        ' PictureBox2
-        ' 
-        PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
-        PictureBox2.Location = New Point(104, 28)
-        PictureBox2.Margin = New Padding(4)
-        PictureBox2.Name = "PictureBox2"
-        PictureBox2.Size = New Size(133, 33)
-        PictureBox2.SizeMode = PictureBoxSizeMode.Zoom
-        PictureBox2.TabIndex = 3
-        PictureBox2.TabStop = False
-        ' 
-        ' PictureBox1
-        ' 
-        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
-        PictureBox1.Location = New Point(16, 13)
-        PictureBox1.Margin = New Padding(4)
-        PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(89, 64)
-        PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
-        PictureBox1.TabIndex = 2
-        PictureBox1.TabStop = False
-        ' 
-        ' Button4
-        ' 
-        Button4.Dock = DockStyle.Bottom
-        Button4.FlatAppearance.BorderSize = 0
-        Button4.FlatStyle = FlatStyle.Flat
-        Button4.Font = New Font("Century Gothic", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button4.ForeColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
-        Button4.Image = CType(resources.GetObject("Button4.Image"), Image)
-        Button4.ImageAlign = ContentAlignment.MiddleLeft
-        Button4.Location = New Point(0, 504)
-        Button4.Margin = New Padding(4)
-        Button4.Name = "Button4"
-        Button4.Size = New Size(248, 42)
-        Button4.TabIndex = 9
-        Button4.Text = "Keluar"
-        Button4.UseVisualStyleBackColor = True
-        ' 
-        ' Label7
-        ' 
-        Label7.AutoSize = True
-        Label7.Font = New Font("Century Gothic", 9F, FontStyle.Bold)
-        Label7.ForeColor = Color.White
-        Label7.Location = New Point(16, 125)
-        Label7.Name = "Label7"
-        Label7.Size = New Size(129, 18)
-        Label7.TabIndex = 10
-        Label7.Text = "Kategori: Level 1"
+        Button3.Font = New Font("Century Gothic", 9F, FontStyle.Bold)
+        Button3.Location = New Point(665, 464)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(195, 35)
+        Button3.TabIndex = 7
+        Button3.Text = "Selanjutnya →"
+        Button3.UseVisualStyleBackColor = True
         ' 
         ' Konsultasi
         ' 
@@ -388,9 +388,12 @@ Partial Class Konsultasi
         Controls.Add(Panel2)
         Font = New Font("Century Gothic", 9F, FontStyle.Bold)
         Name = "Konsultasi"
-        Text = "Konsultasi "
+        Text = "Konsultasi Level 1"
         Panel2.ResumeLayout(False)
         Panel2.PerformLayout()
+        Sidebar.ResumeLayout(False)
+        CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         PanelQuestion.ResumeLayout(False)
         PanelQuestion.PerformLayout()
         GroupBox1.ResumeLayout(False)
@@ -400,9 +403,6 @@ Partial Class Konsultasi
         CType(PictureBox5, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox4, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
-        Sidebar.ResumeLayout(False)
-        CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
     Friend WithEvents Panel2 As Panel
@@ -411,7 +411,6 @@ Partial Class Konsultasi
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents ProgressBar1 As ProgressBar
-    Friend WithEvents Button3 As Button
     Friend WithEvents PanelQuestion As Panel
     Friend WithEvents Label6 As Label
     Friend WithEvents RadioButton4 As RadioButton
@@ -433,4 +432,5 @@ Partial Class Konsultasi
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Button4 As Button
     Friend WithEvents Label7 As Label
+    Friend WithEvents Button3 As Button
 End Class

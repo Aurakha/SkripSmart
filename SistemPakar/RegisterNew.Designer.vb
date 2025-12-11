@@ -24,11 +24,22 @@ Partial Class RegisterNew
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(RegisterNew))
         Panel2 = New Panel()
-        PictureBox4 = New PictureBox()
-        Label2 = New Label()
+        Panel9 = New Panel()
+        Label9 = New Label()
         Label6 = New Label()
-        Button2 = New Button()
+        Panel7 = New Panel()
+        ComboBox1 = New ComboBox()
+        PictureBox6 = New PictureBox()
         Button1 = New Button()
+        Panel1 = New Panel()
+        Panel8 = New Panel()
+        PictureBox5 = New PictureBox()
+        TextBox1 = New TextBox()
+        Label2 = New Label()
+        Label8 = New Label()
+        Button2 = New Button()
+        PictureBox4 = New PictureBox()
+        Label5 = New Label()
         Panel3 = New Panel()
         Panel5 = New Panel()
         PictureBox2 = New PictureBox()
@@ -42,28 +53,17 @@ Partial Class RegisterNew
         Label7 = New Label()
         Label1 = New Label()
         PictureBox1 = New PictureBox()
-        Label8 = New Label()
-        Panel1 = New Panel()
-        PictureBox5 = New PictureBox()
-        TextBox1 = New TextBox()
-        Panel7 = New Panel()
-        PictureBox6 = New PictureBox()
-        ComboBox1 = New ComboBox()
-        Panel8 = New Panel()
-        Panel9 = New Panel()
-        Label9 = New Label()
-        Label5 = New Label()
         Panel2.SuspendLayout()
+        Panel7.SuspendLayout()
+        CType(PictureBox6, ComponentModel.ISupportInitialize).BeginInit()
+        Panel1.SuspendLayout()
+        CType(PictureBox5, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox4, ComponentModel.ISupportInitialize).BeginInit()
         Panel5.SuspendLayout()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         Panel6.SuspendLayout()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
-        Panel1.SuspendLayout()
-        CType(PictureBox5, ComponentModel.ISupportInitialize).BeginInit()
-        Panel7.SuspendLayout()
-        CType(PictureBox6, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Panel2
@@ -93,26 +93,23 @@ Partial Class RegisterNew
         Panel2.Size = New Size(431, 784)
         Panel2.TabIndex = 1
         ' 
-        ' PictureBox4
+        ' Panel9
         ' 
-        PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), Image)
-        PictureBox4.Location = New Point(161, 72)
-        PictureBox4.Name = "PictureBox4"
-        PictureBox4.Size = New Size(197, 52)
-        PictureBox4.SizeMode = PictureBoxSizeMode.Zoom
-        PictureBox4.TabIndex = 22
-        PictureBox4.TabStop = False
+        Panel9.BackColor = Color.FromArgb(CByte(113), CByte(50), CByte(202))
+        Panel9.Location = New Point(43, 564)
+        Panel9.Name = "Panel9"
+        Panel9.Size = New Size(315, 1)
+        Panel9.TabIndex = 17
         ' 
-        ' Label2
+        ' Label9
         ' 
-        Label2.AutoSize = True
-        Label2.Font = New Font("Century Gothic", 7.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label2.ForeColor = SystemColors.ControlDark
-        Label2.Location = New Point(130, 754)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(165, 17)
-        Label2.TabIndex = 21
-        Label2.Text = "Develop By: Kelompok 7"
+        Label9.AutoSize = True
+        Label9.Font = New Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label9.Location = New Point(43, 502)
+        Label9.Name = "Label9"
+        Label9.Size = New Size(45, 21)
+        Label9.TabIndex = 26
+        Label9.Text = "Role"
         ' 
         ' Label6
         ' 
@@ -126,16 +123,35 @@ Partial Class RegisterNew
         Label6.TabIndex = 20
         Label6.Text = "Login"
         ' 
-        ' Button2
+        ' Panel7
         ' 
-        Button2.BackColor = Color.FromArgb(CByte(192), CByte(0), CByte(0))
-        Button2.ForeColor = Color.White
-        Button2.Location = New Point(43, 665)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(346, 37)
-        Button2.TabIndex = 18
-        Button2.Text = "Batal"
-        Button2.UseVisualStyleBackColor = False
+        Panel7.Controls.Add(ComboBox1)
+        Panel7.Controls.Add(PictureBox6)
+        Panel7.Location = New Point(43, 526)
+        Panel7.Name = "Panel7"
+        Panel7.Size = New Size(346, 46)
+        Panel7.TabIndex = 25
+        ' 
+        ' ComboBox1
+        ' 
+        ComboBox1.Font = New Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        ComboBox1.FormattingEnabled = True
+        ComboBox1.Items.AddRange(New Object() {"Admin", "Mahasiswa"})
+        ComboBox1.Location = New Point(0, 11)
+        ComboBox1.Name = "ComboBox1"
+        ComboBox1.Size = New Size(315, 28)
+        ComboBox1.TabIndex = 16
+        ' 
+        ' PictureBox6
+        ' 
+        PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), Image)
+        PictureBox6.InitialImage = CType(resources.GetObject("PictureBox6.InitialImage"), Image)
+        PictureBox6.Location = New Point(321, 11)
+        PictureBox6.Name = "PictureBox6"
+        PictureBox6.Size = New Size(25, 28)
+        PictureBox6.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox6.TabIndex = 15
+        PictureBox6.TabStop = False
         ' 
         ' Button1
         ' 
@@ -147,6 +163,96 @@ Partial Class RegisterNew
         Button1.TabIndex = 17
         Button1.Text = "Daftar"
         Button1.UseVisualStyleBackColor = False
+        ' 
+        ' Panel1
+        ' 
+        Panel1.Controls.Add(Panel8)
+        Panel1.Controls.Add(PictureBox5)
+        Panel1.Controls.Add(TextBox1)
+        Panel1.Location = New Point(43, 444)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(346, 46)
+        Panel1.TabIndex = 24
+        ' 
+        ' Panel8
+        ' 
+        Panel8.BackColor = Color.FromArgb(CByte(113), CByte(50), CByte(202))
+        Panel8.Location = New Point(0, 45)
+        Panel8.Name = "Panel8"
+        Panel8.Size = New Size(346, 1)
+        Panel8.TabIndex = 16
+        ' 
+        ' PictureBox5
+        ' 
+        PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), Image)
+        PictureBox5.InitialImage = CType(resources.GetObject("PictureBox5.InitialImage"), Image)
+        PictureBox5.Location = New Point(321, 11)
+        PictureBox5.Name = "PictureBox5"
+        PictureBox5.Size = New Size(25, 28)
+        PictureBox5.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox5.TabIndex = 15
+        PictureBox5.TabStop = False
+        ' 
+        ' TextBox1
+        ' 
+        TextBox1.BorderStyle = BorderStyle.None
+        TextBox1.Font = New Font("Century Gothic", 10F)
+        TextBox1.Location = New Point(3, 14)
+        TextBox1.Name = "TextBox1"
+        TextBox1.Size = New Size(312, 21)
+        TextBox1.TabIndex = 13
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Font = New Font("Century Gothic", 7.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label2.ForeColor = SystemColors.ControlDark
+        Label2.Location = New Point(130, 754)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(165, 17)
+        Label2.TabIndex = 21
+        Label2.Text = "Develop By: Kelompok 7"
+        ' 
+        ' Label8
+        ' 
+        Label8.AutoSize = True
+        Label8.Font = New Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label8.Location = New Point(43, 420)
+        Label8.Name = "Label8"
+        Label8.Size = New Size(144, 21)
+        Label8.TabIndex = 23
+        Label8.Text = "Ulangi Password"
+        ' 
+        ' Button2
+        ' 
+        Button2.BackColor = Color.FromArgb(CByte(192), CByte(0), CByte(0))
+        Button2.ForeColor = Color.White
+        Button2.Location = New Point(43, 665)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(346, 37)
+        Button2.TabIndex = 18
+        Button2.Text = "Batal"
+        Button2.UseVisualStyleBackColor = False
+        ' 
+        ' PictureBox4
+        ' 
+        PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), Image)
+        PictureBox4.Location = New Point(161, 72)
+        PictureBox4.Name = "PictureBox4"
+        PictureBox4.Size = New Size(197, 52)
+        PictureBox4.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox4.TabIndex = 22
+        PictureBox4.TabStop = False
+        ' 
+        ' Label5
+        ' 
+        Label5.AutoSize = True
+        Label5.Font = New Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label5.Location = New Point(47, 575)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(137, 16)
+        Label5.TabIndex = 19
+        Label5.Text = "Sudah Punya Akun?"
         ' 
         ' Panel3
         ' 
@@ -274,124 +380,22 @@ Partial Class RegisterNew
         PictureBox1.TabIndex = 1
         PictureBox1.TabStop = False
         ' 
-        ' Label8
-        ' 
-        Label8.AutoSize = True
-        Label8.Font = New Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label8.Location = New Point(43, 420)
-        Label8.Name = "Label8"
-        Label8.Size = New Size(144, 21)
-        Label8.TabIndex = 23
-        Label8.Text = "Ulangi Password"
-        ' 
-        ' Panel1
-        ' 
-        Panel1.Controls.Add(Panel8)
-        Panel1.Controls.Add(PictureBox5)
-        Panel1.Controls.Add(TextBox1)
-        Panel1.Location = New Point(43, 444)
-        Panel1.Name = "Panel1"
-        Panel1.Size = New Size(346, 46)
-        Panel1.TabIndex = 24
-        ' 
-        ' PictureBox5
-        ' 
-        PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), Image)
-        PictureBox5.InitialImage = CType(resources.GetObject("PictureBox5.InitialImage"), Image)
-        PictureBox5.Location = New Point(321, 11)
-        PictureBox5.Name = "PictureBox5"
-        PictureBox5.Size = New Size(25, 28)
-        PictureBox5.SizeMode = PictureBoxSizeMode.Zoom
-        PictureBox5.TabIndex = 15
-        PictureBox5.TabStop = False
-        ' 
-        ' TextBox1
-        ' 
-        TextBox1.BorderStyle = BorderStyle.None
-        TextBox1.Font = New Font("Century Gothic", 10F)
-        TextBox1.Location = New Point(3, 14)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(312, 21)
-        TextBox1.TabIndex = 13
-        ' 
-        ' Panel7
-        ' 
-        Panel7.Controls.Add(ComboBox1)
-        Panel7.Controls.Add(PictureBox6)
-        Panel7.Location = New Point(43, 526)
-        Panel7.Name = "Panel7"
-        Panel7.Size = New Size(346, 46)
-        Panel7.TabIndex = 25
-        ' 
-        ' PictureBox6
-        ' 
-        PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), Image)
-        PictureBox6.InitialImage = CType(resources.GetObject("PictureBox6.InitialImage"), Image)
-        PictureBox6.Location = New Point(321, 11)
-        PictureBox6.Name = "PictureBox6"
-        PictureBox6.Size = New Size(25, 28)
-        PictureBox6.SizeMode = PictureBoxSizeMode.Zoom
-        PictureBox6.TabIndex = 15
-        PictureBox6.TabStop = False
-        ' 
-        ' ComboBox1
-        ' 
-        ComboBox1.Font = New Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        ComboBox1.FormattingEnabled = True
-        ComboBox1.Items.AddRange(New Object() {"Admin", "Mahasiswa"})
-        ComboBox1.Location = New Point(0, 11)
-        ComboBox1.Name = "ComboBox1"
-        ComboBox1.Size = New Size(315, 28)
-        ComboBox1.TabIndex = 16
-        ' 
-        ' Panel8
-        ' 
-        Panel8.BackColor = Color.FromArgb(CByte(113), CByte(50), CByte(202))
-        Panel8.Location = New Point(0, 45)
-        Panel8.Name = "Panel8"
-        Panel8.Size = New Size(346, 1)
-        Panel8.TabIndex = 16
-        ' 
-        ' Panel9
-        ' 
-        Panel9.BackColor = Color.FromArgb(CByte(113), CByte(50), CByte(202))
-        Panel9.Location = New Point(43, 564)
-        Panel9.Name = "Panel9"
-        Panel9.Size = New Size(315, 1)
-        Panel9.TabIndex = 17
-        ' 
-        ' Label9
-        ' 
-        Label9.AutoSize = True
-        Label9.Font = New Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label9.Location = New Point(43, 502)
-        Label9.Name = "Label9"
-        Label9.Size = New Size(45, 21)
-        Label9.TabIndex = 26
-        Label9.Text = "Role"
-        ' 
-        ' Label5
-        ' 
-        Label5.AutoSize = True
-        Label5.Font = New Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label5.Location = New Point(47, 575)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(137, 16)
-        Label5.TabIndex = 19
-        Label5.Text = "Sudah Punya Akun?"
-        ' 
         ' RegisterNew
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1260, 808)
         Controls.Add(Panel2)
-        FormBorderStyle = FormBorderStyle.None
         Location = New Point(435, 12)
         Name = "RegisterNew"
         Text = "RegisterNew"
         Panel2.ResumeLayout(False)
         Panel2.PerformLayout()
+        Panel7.ResumeLayout(False)
+        CType(PictureBox6, ComponentModel.ISupportInitialize).EndInit()
+        Panel1.ResumeLayout(False)
+        Panel1.PerformLayout()
+        CType(PictureBox5, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox4, ComponentModel.ISupportInitialize).EndInit()
         Panel5.ResumeLayout(False)
         Panel5.PerformLayout()
@@ -400,11 +404,6 @@ Partial Class RegisterNew
         Panel6.PerformLayout()
         CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
-        Panel1.ResumeLayout(False)
-        Panel1.PerformLayout()
-        CType(PictureBox5, ComponentModel.ISupportInitialize).EndInit()
-        Panel7.ResumeLayout(False)
-        CType(PictureBox6, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 

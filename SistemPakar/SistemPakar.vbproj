@@ -1,58 +1,93 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows</TargetFramework>
-    <StartupObject>SistemPakar.My.MyApplication</StartupObject>
-    <UseWindowsForms>true</UseWindowsForms>
-    <MyType>WindowsForms</MyType>
-  </PropertyGroup>
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<StartupObject>SistemPakar.My.MyApplication</StartupObject>
+		<UseWindowsForms>true</UseWindowsForms>
+		<MyType>WindowsForms</MyType>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Import Include="System.Data" />
+		<Import Include="System.Drawing" />
+		<Import Include="System.Windows.Forms" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="ProjectPBL.sln" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="MySql.Data" Version="9.5.0" />
+		<PackageReference Include="WinForms.DataVisualization" Version="1.10.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Update="My Project\Application.Designer.vb">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Application.myapp</DependentUpon>
+		</Compile>
+
+		<Compile Update="My Project\Resources.Designer.vb">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Resources.resx</DependentUpon>
+		</Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="My Project\Application.myapp">
+			<Generator>MyApplicationCodeGenerator</Generator>
+			<LastGenOutput>Application.Designer.vb</LastGenOutput>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Prodi - TMD\" />
+		<Folder Include="Prodi - TMJ\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Update="My Project\Resources.resx">
+			<CustomToolNamespace>My.Resources</CustomToolNamespace>
+			<Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+			<LastGenOutput>Resources.Designer.vb</LastGenOutput>
+		</EmbeddedResource>
+	</ItemGroup>
+      
+      <ItemGroup>
+        <Compile Include="FormHasilLvl1.vb">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="FormHasilLvl1.Designer.vb">
+          <DependentUpon>NAMA_FORM.vb</DependentUpon>
+        </Compile>
+        <EmbeddedResource Include="FormHasilLvl1.resx">
+          <DependentUpon>NAMA_FORM.vb</DependentUpon>
+        </EmbeddedResource>
+      </ItemGroup>
+
+	<ItemGroup>
+		<Compile Include="FormKonsulTI.vb">
+			<SubType>Form</SubType>
+		</Compile>
+		<Compile Include="FormKonsulTI.Designer.vb">
+			<DependentUpon>FormKonsulTI1.vb</DependentUpon>
+		</Compile>
+		<EmbeddedResource Include="FormKonsulTI.resx">
+			<DependentUpon>FormKonsulTI.vb</DependentUpon>
+		</EmbeddedResource>
+	</ItemGroup>
 
   <ItemGroup>
-    <Import Include="System.Data" />
-    <Import Include="System.Drawing" />
-    <Import Include="System.Windows.Forms" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="ProjectPBL.sln" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="MySql.Data" Version="9.5.0" />
-    <PackageReference Include="WinForms.DataVisualization" Version="1.10.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Update="My Project\Application.Designer.vb">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Application.myapp</DependentUpon>
+    <Compile Include="DashboardNew.vb" />
+    <Compile Include="DashboardNew.Designer.vb">
+      <DependentUpon>DashboardNew.vb</DependentUpon>
     </Compile>
-    <Compile Update="My Project\Resources.Designer.vb">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="My Project\Application.myapp">
-      <Generator>MyApplicationCodeGenerator</Generator>
-      <LastGenOutput>Application.Designer.vb</LastGenOutput>
-    </None>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Prodi - TMD\" />
-    <Folder Include="Prodi - TMJ\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Update="My Project\Resources.resx">
-      <CustomToolNamespace>My.Resources</CustomToolNamespace>
-      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    <EmbeddedResource Include="DashboardNew.resx">
+      <DependentUpon>DashboardNew.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
 

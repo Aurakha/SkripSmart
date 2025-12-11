@@ -17,136 +17,236 @@ Partial Class FormHasilLvl1
 
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.PanelHeader = New System.Windows.Forms.Panel()
-        Me.LabelHeader = New System.Windows.Forms.Label()
-        Me.lblIntro = New System.Windows.Forms.Label()
-        Me.lblNamaHasil = New System.Windows.Forms.Label()
-        Me.lblCF = New System.Windows.Forms.Label()
-        Me.txtPesan = New System.Windows.Forms.TextBox()
-        Me.btnLanjut = New System.Windows.Forms.Button()
-        Me.btnTutup = New System.Windows.Forms.Button()
-        Me.PanelHeader.SuspendLayout()
-        Me.SuspendLayout()
-        '
-        'PanelHeader
-        '
-        Me.PanelHeader.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
-        Me.PanelHeader.Controls.Add(Me.LabelHeader)
-        Me.PanelHeader.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PanelHeader.Location = New System.Drawing.Point(0, 0)
-        Me.PanelHeader.Name = "PanelHeader"
-        Me.PanelHeader.Size = New System.Drawing.Size(600, 80)
-        Me.PanelHeader.TabIndex = 0
-        '
-        'LabelHeader
-        '
-        Me.LabelHeader.AutoSize = True
-        Me.LabelHeader.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Bold)
-        Me.LabelHeader.ForeColor = System.Drawing.Color.White
-        Me.LabelHeader.Location = New System.Drawing.Point(20, 20)
-        Me.LabelHeader.Name = "LabelHeader"
-        Me.LabelHeader.Size = New System.Drawing.Size(262, 45)
-        Me.LabelHeader.TabIndex = 0
-        Me.LabelHeader.Text = "HASIL ANALISIS"
-        '
-        'lblIntro
-        '
-        Me.lblIntro.AutoSize = True
-        Me.lblIntro.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.lblIntro.ForeColor = System.Drawing.Color.Gray
-        Me.lblIntro.Location = New System.Drawing.Point(25, 100)
-        Me.lblIntro.Name = "lblIntro"
-        Me.lblIntro.Size = New System.Drawing.Size(326, 28)
-        Me.lblIntro.TabIndex = 1
-        Me.lblIntro.Text = "Berdasarkan jawabanmu, kamu cocok masuk ke:"
-        '
-        'lblNamaHasil
-        '
-        Me.lblNamaHasil.AutoSize = True
-        Me.lblNamaHasil.Font = New System.Drawing.Font("Segoe UI", 22.0!, System.Drawing.FontStyle.Bold)
-        Me.lblNamaHasil.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
-        Me.lblNamaHasil.Location = New System.Drawing.Point(22, 130)
-        Me.lblNamaHasil.Name = "lblNamaHasil"
-        Me.lblNamaHasil.Size = New System.Drawing.Size(437, 54)
-        Me.lblNamaHasil.TabIndex = 2
-        Me.lblNamaHasil.Text = "TEKNIK INFORMATIKA"
-        '
-        'lblCF
-        '
-        Me.lblCF.AutoSize = True
-        Me.lblCF.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.lblCF.ForeColor = System.Drawing.Color.OrangeRed
-        Me.lblCF.Location = New System.Drawing.Point(25, 190)
-        Me.lblCF.Name = "lblCF"
-        Me.lblCF.Size = New System.Drawing.Size(248, 30)
-        Me.lblCF.TabIndex = 3
-        Me.lblCF.Text = "Tingkat Keyakinan: 0%"
-        '
-        'txtPesan
-        '
-        Me.txtPesan.BackColor = System.Drawing.Color.White
-        Me.txtPesan.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtPesan.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.txtPesan.Location = New System.Drawing.Point(30, 240)
-        Me.txtPesan.Multiline = True
-        Me.txtPesan.Name = "txtPesan"
-        Me.txtPesan.ReadOnly = True
-        Me.txtPesan.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.txtPesan.Size = New System.Drawing.Size(540, 150)
-        Me.txtPesan.TabIndex = 4
-        Me.txtPesan.Text = "Deskripsi detail hasil analisis..."
-        '
-        'btnLanjut
-        '
-        Me.btnLanjut.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(96, Byte), Integer))
-        Me.btnLanjut.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnLanjut.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnLanjut.Font = New System.Drawing.Font("Segoe UI", 11.0!, System.Drawing.FontStyle.Bold)
-        Me.btnLanjut.ForeColor = System.Drawing.Color.White
-        Me.btnLanjut.Location = New System.Drawing.Point(30, 410)
-        Me.btnLanjut.Name = "btnLanjut"
-        Me.btnLanjut.Size = New System.Drawing.Size(540, 55)
-        Me.btnLanjut.TabIndex = 5
-        Me.btnLanjut.Text = "LANJUT KE TAHAP BERIKUTNYA >>"
-        Me.btnLanjut.UseVisualStyleBackColor = False
-        '
-        'btnTutup
-        '
-        Me.btnTutup.BackColor = System.Drawing.Color.Transparent
-        Me.btnTutup.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnTutup.FlatAppearance.BorderSize = 0
-        Me.btnTutup.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnTutup.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Underline)
-        Me.btnTutup.ForeColor = System.Drawing.Color.Gray
-        Me.btnTutup.Location = New System.Drawing.Point(30, 480)
-        Me.btnTutup.Name = "btnTutup"
-        Me.btnTutup.Size = New System.Drawing.Size(540, 35)
-        Me.btnTutup.TabIndex = 6
-        Me.btnTutup.Text = "Tutup Aplikasi"
-        Me.btnTutup.UseVisualStyleBackColor = False
-        '
-        'FormHasilLvl1
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 25.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(600, 550)
-        Me.Controls.Add(Me.btnTutup)
-        Me.Controls.Add(Me.btnLanjut)
-        Me.Controls.Add(Me.txtPesan)
-        Me.Controls.Add(Me.lblCF)
-        Me.Controls.Add(Me.lblNamaHasil)
-        Me.Controls.Add(Me.lblIntro)
-        Me.Controls.Add(Me.PanelHeader)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
-        Me.MaximizeBox = False
-        Me.Name = "FormHasilLvl1"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Hasil Analisis Level 1"
-        Me.PanelHeader.ResumeLayout(False)
-        Me.PanelHeader.PerformLayout()
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
+        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New DataVisualization.Charting.ChartArea()
+        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New DataVisualization.Charting.Legend()
+        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New DataVisualization.Charting.Series()
+        PanelHeader = New Panel()
+        LabelHeader = New Label()
+        lblIntro = New Label()
+        lblNamaHasil = New Label()
+        lblCF = New Label()
+        txtPesan = New TextBox()
+        Panel1 = New Panel()
+        Label22 = New Label()
+        Label12 = New Label()
+        Label21 = New Label()
+        Button1 = New Button()
+        Button2 = New Button()
+        Chart1 = New DataVisualization.Charting.Chart()
+        Panel2 = New Panel()
+        PanelHeader.SuspendLayout()
+        Panel1.SuspendLayout()
+        CType(Chart1, ComponentModel.ISupportInitialize).BeginInit()
+        Panel2.SuspendLayout()
+        SuspendLayout()
+        ' 
+        ' PanelHeader
+        ' 
+        PanelHeader.BackColor = Color.FromArgb(CByte(113), CByte(50), CByte(202))
+        PanelHeader.Controls.Add(LabelHeader)
+        PanelHeader.Dock = DockStyle.Top
+        PanelHeader.Location = New Point(0, 0)
+        PanelHeader.Margin = New Padding(2)
+        PanelHeader.Name = "PanelHeader"
+        PanelHeader.Size = New Size(1405, 55)
+        PanelHeader.TabIndex = 0
+        ' 
+        ' LabelHeader
+        ' 
+        LabelHeader.AutoSize = True
+        LabelHeader.Font = New Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        LabelHeader.ForeColor = Color.White
+        LabelHeader.Location = New Point(507, 9)
+        LabelHeader.Margin = New Padding(2, 0, 2, 0)
+        LabelHeader.Name = "LabelHeader"
+        LabelHeader.Size = New Size(308, 34)
+        LabelHeader.TabIndex = 0
+        LabelHeader.Text = "HASIL ANALISIS AKHIR"
+        ' 
+        ' lblIntro
+        ' 
+        lblIntro.AutoSize = True
+        lblIntro.Font = New Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        lblIntro.ForeColor = Color.Gray
+        lblIntro.Location = New Point(15, 10)
+        lblIntro.Margin = New Padding(2, 0, 2, 0)
+        lblIntro.Name = "lblIntro"
+        lblIntro.Size = New Size(422, 21)
+        lblIntro.TabIndex = 1
+        lblIntro.Text = "Berdasarkan jawabanmu, kamu cocok masuk ke:"
+        ' 
+        ' lblNamaHasil
+        ' 
+        lblNamaHasil.AutoSize = True
+        lblNamaHasil.BorderStyle = BorderStyle.Fixed3D
+        lblNamaHasil.Font = New Font("Century Gothic", 22.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblNamaHasil.ForeColor = Color.Black
+        lblNamaHasil.Location = New Point(13, 34)
+        lblNamaHasil.Margin = New Padding(2, 0, 2, 0)
+        lblNamaHasil.Name = "lblNamaHasil"
+        lblNamaHasil.Size = New Size(392, 46)
+        lblNamaHasil.TabIndex = 2
+        lblNamaHasil.Text = "TEKNIK INFORMATIKA"
+        ' 
+        ' lblCF
+        ' 
+        lblCF.AutoSize = True
+        lblCF.Font = New Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblCF.ForeColor = Color.OrangeRed
+        lblCF.Location = New Point(15, 82)
+        lblCF.Margin = New Padding(2, 0, 2, 0)
+        lblCF.Name = "lblCF"
+        lblCF.Size = New Size(229, 23)
+        lblCF.TabIndex = 3
+        lblCF.Text = "Tingkat Keyakinan: 0%"
+        ' 
+        ' txtPesan
+        ' 
+        txtPesan.BackColor = Color.White
+        txtPesan.BorderStyle = BorderStyle.FixedSingle
+        txtPesan.Font = New Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        txtPesan.Location = New Point(20, 122)
+        txtPesan.Margin = New Padding(2)
+        txtPesan.Multiline = True
+        txtPesan.Name = "txtPesan"
+        txtPesan.ReadOnly = True
+        txtPesan.ScrollBars = ScrollBars.Vertical
+        txtPesan.Size = New Size(486, 120)
+        txtPesan.TabIndex = 4
+        txtPesan.Text = "Deskripsi detail hasil analisis..."
+        ' 
+        ' Panel1
+        ' 
+        Panel1.BackColor = Color.FromArgb(CByte(113), CByte(50), CByte(202))
+        Panel1.Controls.Add(Label22)
+        Panel1.Controls.Add(Label12)
+        Panel1.Controls.Add(Label21)
+        Panel1.Controls.Add(Button1)
+        Panel1.Controls.Add(Button2)
+        Panel1.Controls.Add(Chart1)
+        Panel1.Location = New Point(560, 81)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(830, 515)
+        Panel1.TabIndex = 20
+        ' 
+        ' Label22
+        ' 
+        Label22.AutoSize = True
+        Label22.BorderStyle = BorderStyle.Fixed3D
+        Label22.Font = New Font("Century Gothic", 10F, FontStyle.Bold)
+        Label22.ForeColor = Color.White
+        Label22.Location = New Point(45, 83)
+        Label22.Margin = New Padding(4, 0, 4, 0)
+        Label22.Name = "Label22"
+        Label22.Size = New Size(126, 21)
+        Label22.TabIndex = 26
+        Label22.Text = "Frontend: 30%"
+        ' 
+        ' Label12
+        ' 
+        Label12.AutoSize = True
+        Label12.BorderStyle = BorderStyle.Fixed3D
+        Label12.Font = New Font("Century Gothic", 10F, FontStyle.Bold)
+        Label12.ForeColor = Color.White
+        Label12.Location = New Point(45, 53)
+        Label12.Margin = New Padding(4, 0, 4, 0)
+        Label12.Name = "Label12"
+        Label12.Size = New Size(130, 21)
+        Label12.TabIndex = 25
+        Label12.Text = "Backend: 20%"
+        ' 
+        ' Label21
+        ' 
+        Label21.AutoSize = True
+        Label21.BorderStyle = BorderStyle.Fixed3D
+        Label21.Font = New Font("Century Gothic", 10F, FontStyle.Bold)
+        Label21.ForeColor = Color.White
+        Label21.Location = New Point(45, 23)
+        Label21.Margin = New Padding(4, 0, 4, 0)
+        Label21.Name = "Label21"
+        Label21.Size = New Size(430, 21)
+        Label21.TabIndex = 24
+        Label21.Text = "Topik paling di rekomendasikan: Machine Learning"
+        ' 
+        ' Button1
+        ' 
+        Button1.BackColor = Color.FromArgb(CByte(113), CByte(50), CByte(202))
+        Button1.Font = New Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button1.ForeColor = Color.White
+        Button1.Location = New Point(597, 449)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(191, 38)
+        Button1.TabIndex = 22
+        Button1.Text = "Simpan Riwayat"
+        Button1.UseVisualStyleBackColor = False
+        ' 
+        ' Button2
+        ' 
+        Button2.BackColor = Color.FromArgb(CByte(192), CByte(0), CByte(0))
+        Button2.Font = New Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button2.ForeColor = Color.White
+        Button2.Location = New Point(45, 451)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(181, 36)
+        Button2.TabIndex = 21
+        Button2.Text = "Tutup Aplikasi"
+        Button2.UseVisualStyleBackColor = False
+        ' 
+        ' Chart1
+        ' 
+        Chart1.BorderlineDashStyle = DataVisualization.Charting.ChartDashStyle.Dot
+        ChartArea2.Name = "ChartArea1"
+        Chart1.ChartAreas.Add(ChartArea2)
+        Legend2.Name = "Legend1"
+        Chart1.Legends.Add(Legend2)
+        Chart1.Location = New Point(45, 130)
+        Chart1.Name = "Chart1"
+        Chart1.Palette = DataVisualization.Charting.ChartColorPalette.EarthTones
+        Series2.ChartArea = "ChartArea1"
+        Series2.ChartType = DataVisualization.Charting.SeriesChartType.Bar
+        Series2.Legend = "Legend1"
+        Series2.Name = "Series1"
+        Chart1.Series.Add(Series2)
+        Chart1.Size = New Size(744, 301)
+        Chart1.TabIndex = 8
+        Chart1.Text = "Chart1"
+        ' 
+        ' Panel2
+        ' 
+        Panel2.Controls.Add(lblIntro)
+        Panel2.Controls.Add(lblNamaHasil)
+        Panel2.Controls.Add(txtPesan)
+        Panel2.Controls.Add(lblCF)
+        Panel2.Location = New Point(12, 81)
+        Panel2.Name = "Panel2"
+        Panel2.Size = New Size(531, 271)
+        Panel2.TabIndex = 21
+        ' 
+        ' FormHasilLvl1
+        ' 
+        AutoScaleDimensions = New SizeF(9F, 20F)
+        AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.White
+        ClientSize = New Size(1405, 611)
+        Controls.Add(Panel2)
+        Controls.Add(Panel1)
+        Controls.Add(PanelHeader)
+        Font = New Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        ForeColor = Color.White
+        FormBorderStyle = FormBorderStyle.FixedDialog
+        Margin = New Padding(2)
+        MaximizeBox = False
+        Name = "FormHasilLvl1"
+        StartPosition = FormStartPosition.CenterScreen
+        Text = "Hasil Analisis"
+        PanelHeader.ResumeLayout(False)
+        PanelHeader.PerformLayout()
+        Panel1.ResumeLayout(False)
+        Panel1.PerformLayout()
+        CType(Chart1, ComponentModel.ISupportInitialize).EndInit()
+        Panel2.ResumeLayout(False)
+        Panel2.PerformLayout()
+        ResumeLayout(False)
 
     End Sub
 
@@ -156,6 +256,12 @@ Partial Class FormHasilLvl1
     Friend WithEvents lblNamaHasil As Label
     Friend WithEvents lblCF As Label
     Friend WithEvents txtPesan As TextBox
-    Friend WithEvents btnLanjut As Button
-    Friend WithEvents btnTutup As Button
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Label22 As Label
+    Friend WithEvents Label12 As Label
+    Friend WithEvents Label21 As Label
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Chart1 As DataVisualization.Charting.Chart
+    Friend WithEvents Panel2 As Panel
 End Class

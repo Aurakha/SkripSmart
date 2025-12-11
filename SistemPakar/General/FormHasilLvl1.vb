@@ -27,31 +27,32 @@
     End Sub
 
     ' Tombol Lanjut: Pindah ke Form Level 2 sesuai Prodi
-    Private Sub btnLanjut_Click(sender As Object, e As EventArgs) Handles btnLanjut.Click
-        Me.Hide() ' Sembunyikan form hasil
+    Private Sub btnLanjut_Click(sender As Object, e As EventArgs)
+        Hide ' Sembunyikan form hasil
 
         ' Navigasi berdasarkan Kode Hasil (TI/TMJ/TMD)
         Select Case KodeHasil
             Case "TI"
                 ' Pastikan kamu punya FormKonsulTI1
-                Dim frm As New FormKonsulTI1()
-                frm.Show()
+                Dim frm As New FormKonsulTI
+                frm.Show
             Case "TMJ"
                 ' Pastikan kamu punya FormKonsulTMJ1
-                Dim frm As New FormKonsulTMJ1()
-                frm.Show()
+                Dim frm As New FormKonsulTMJ
+                frm.Show
             Case "TMD"
                 ' Pastikan kamu punya FormKonsulTMD1
-                Dim frm As New FormKonsulTMD1()
-                frm.Show()
+                Dim frm As New FormKonsulTMD
+                frm.Show
             Case Else
                 MsgBox("Form untuk prodi ini belum tersedia.", MsgBoxStyle.Information)
-                Me.Show()
+                Show
         End Select
     End Sub
 
-    Private Sub btnTutup_Click(sender As Object, e As EventArgs) Handles btnTutup.Click
-        Application.Exit()
+    Private Sub btnTutup_Click(sender As Object, e As EventArgs)
+        Application.Exit
     End Sub
+
 
 End Class
